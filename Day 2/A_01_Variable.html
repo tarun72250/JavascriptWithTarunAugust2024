@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in Js</title>
+</head>
+<body>
+    <h1>Hello From Variable in js</h1>
+    
+    <script>
+    // Variables are Containers for Storing Data
+    // JavaScript Variables can be declared in 4 ways:
+
+    // Automatically
+    // Using var
+    // Using let
+    // Using const   
+
+    // Note
+    // It is considered good programming practice to always declare variables before use.
+
+    //----------------------------------------------------------------------------------
+    //When to Use var, let, or const?
+    // 1. Always declare variables
+
+    // 2. Always use const if the value should not be changed
+
+    // 3. Always use const if the type should not be changed (Arrays and Objects)
+
+    // 4. Only use let if you can't use const
+
+    // 5. Only use var if you MUST support old browsers.
+
+    // Note :- What is Variables
+    // Variables are containers for storing values.
+
+    
+    //----------------------------------------------------------------------------------
+    // JavaScript Identifiers
+    // All JavaScript variables must be identified with unique names.
+
+    // These unique names are called identifiers.
+
+    // Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+    // The general rules for constructing names for variables (unique identifiers) are:
+
+    // Names can contain letters, digits, underscores, and dollar signs.
+    // Names must begin with a letter.
+    // Names can also begin with $ and _ (but we will not use it in this tutorial).
+    // Names are case sensitive (y and Y are different variables).
+    // Reserved words (like JavaScript keywords) cannot be used as names.
+
+    // Note
+    // JavaScript identifiers are case-sensitive.
+
+    
+    //----------------------------------------------------------------------------------
+    
+    // JavaScript Data Types
+    // JavaScript variables can hold numbers like 100 and text values like "John Doe".
+
+    // In programming, text values are called text strings.
+
+    // JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+    // Strings are written inside double or single quotes. Numbers are written without quotes.
+
+    // If you put a number in quotes, it will be treated as a text string.
+
+    // const pi = 3.14;
+    // let person = "John Doe";
+    // let answer = 'Yes I am!';
+
+    //----------------------------------------------------------------------------------
+
+    // Declaring a JavaScript Variable
+    // Creating a variable in JavaScript is called "declaring" a variable.
+
+    // You declare a JavaScript variable with the var or the let keyword:
+
+    // var carName;
+    // or:
+    // let carName;
+
+    // After the declaration, the variable has no value (technically it is undefined).
+    // To assign a value to the variable, use the equal sign:
+    //carName = "Volvo";
+
+    // In the example below, we create a variable called carName and assign the value "Volvo" to it.
+    // Then we "output" the value inside an HTML paragraph with id="demo":
+
+    // Example
+    // <p id="demo"></p>
+
+   
+    // let carName = "Volvo";
+    // document.getElementById("demo").innerHTML = carName;
+   
+    // Note
+    // It's a good programming practice to declare all variables at the beginning of a script.
+
+    //----------------------------------------------------------------------------------
+   
+    // One Statement, Many Variables
+    // You can declare many variables in one statement.
+
+    // Start the statement with let and separate the variables by comma:
+
+    // Example
+    // let person = "John Doe", carName = "Volvo", price = 200;
+
+    //----------------------------------------------------------------------------------
+
+    //Value = undefined
+    // In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+    // A variable declared without a value will have the value undefined.
+
+    // The variable carName will have the value undefined after the execution of this statement:
+
+    // Example
+    // let carName; // here value will be undefined
+    // document.write(carName);
+
+    //----------------------------------------------------------------------------------
+
+    // Re-Declaring JavaScript Variables
+    // If you re-declare a JavaScript variable declared with var, it will not lose its value.
+
+    // The variable carName will still have the value "Volvo" after the execution of these statements:
+
+    // Example
+    // var carName = "Volvo";
+    // var carName;
+    // document.write(carName);
+
+    //----------------------------------------------------------------------------------
+
+    //Note
+    // You cannot re-declare a variable declared with let or const.
+
+    // This will not work:
+
+    // let carName = "Volvo";
+    // let carName;
+    // document.write(carName);
+
+    //----------------------------------------------------------------------------------
+
+    //JavaScript Arithmetic
+    //As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:
+
+    // Example
+    // let x = 5 + 2 + 3;
+
+    // You can also add strings, but strings will be concatenated:
+
+    // Example
+    // let x = "John" + " " + "Doe";
+
+    // Example
+    // let x = "5" + 2 + 3;
+
+    //----------------------------------------------------------------------------------
+    // Note
+    // If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+
+    // Now try this:
+
+    // Example
+    // let x = 2 + 3 + "5";
+
+    //----------------------------------------------------------------------------------
+    
+   
+
+    </script>
+</body>
+</html>
