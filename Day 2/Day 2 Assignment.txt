@@ -1,0 +1,102 @@
+1. You can declare many variables in one statement.
+Start the statement with let and separate the variables by comma:
+
+2. A declaration can span multiple lines:
+ person = "John Doe"
+carName = "Volvo"
+price = 200
+
+3. Display the following output :- 
+var x = 10;
+{
+var x = 2;
+document.write(x);
+}
+document.write(x);
+
+4. State true or false
+var x = 2;   
+let x = 3;   
+{
+let x = 2;   
+let x = 3;   
+}
+
+{
+let x = 2;   
+var x = 3;   
+}
+
+5. Value of x is 
+
+const x = 10;
+
+{
+const x = 2;
+document.write(x);
+
+}
+document.write(x);
+
+6. Redeclaring an existing var or let variable to const, in the same scope, is not allowed:
+
+var x = 2;    
+const x = 2;   
+
+{
+let x = 2;    
+const x = 2;   
+}
+
+{
+const x = 2;   
+const x = 2;   
+}
+
+7.Reassigning an existing const variable, in the same scope, is not allowed: 
+
+const x = 2;     
+x = 2;           
+var x = 2;       
+let x = 2;       
+const x = 2;     
+
+{
+  const x = 2;  
+  x = 2;        
+  var x = 2;    
+  let x = 2;     
+  const x = 2;   
+}
+
+8. Declare Using let Multiply 7 by 8 and display the result using document.write.
+
+9. Declare Using let Subtract 15 from 25 and display the result.using document.write.
+
+10. Using Ternary Operator Check if 10 is greater than 5 and display the result using document.write.
+
+11. Compare if the string "5" is equal in value and type to the number 5 using ===, and display the result.using ternary operator
+
+12. Concatenate the strings "Hello" and "World" with a space in between, then display the result.using document.write.
+
+13. Question: Display the type of the variable x , y , z  where x = 42
+
+13. Add the number 10 to the string "Days" and display the result.
+
+14. Check if an array is an instance of the Array class and display the result.
+
+15. Use the ternary operator to check if the number 10 is even or odd and display "Even" or "Odd".
+
+16. Declare a string and a number, then display their types using typeof.
+
+17. Declare a boolean, a number, and a string, and display their values in one line using concatenation.
+
+18. Create an object employee with properties name, age, and position, and display the name and position.
+
+19. Declare a variable count with an initial value of 5. Increment it by 1, then decrement it by 2, and display the final value. 
+
+20. Check if the number 8 is greater than 5 and less than 10 using logical AND (&&), and display the result.
+
+21. Perform a bitwise OR operation on the numbers 5 and 3, then display the result.
+
+22. Use the bitwise NOT operator on the number 4 and display the result.
