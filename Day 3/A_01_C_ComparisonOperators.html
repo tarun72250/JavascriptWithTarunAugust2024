@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Opertor in js </title>
+</head>
+<body>
+    <script>
+       let a = 10;
+       let b = "10";
+       document.write(a==b);//loose coupling , loosely typed checking
+       document.write("</br>")
+       document.write(a!=b);//loose coupling , loosely typed checking
+       document.write("</br>")
+
+       document.write(a===b);//Strongly coupling , Strongely typed checking
+       document.write("</br>")
+       document.write(a!==b);
+       document.write("</br>")
+
+
+
+       let c = 20;
+       let d = 40;
+
+       document.write("</br>");
+       document.write(c > d); //greater than , false 
+  
+       document.write("</br>");
+       document.write(c < d); //less than , true
+  
+       document.write("</br>");
+       document.write(c >= d); //Greater  than equals to , false
+  
+        document.write("</br>");
+        document.write(c <= d); //less than equals to  , true
+
+        
+       //ternary operator use 
+       let result = c > d ? "c is big" : " d is big";
+       document.write(result);
+
+       
+      </script>
+</body>
+</html>

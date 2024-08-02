@@ -1,0 +1,161 @@
+1. Find the output of the following :- 
+        let x = 589;
+        document.write(x++);
+        x += x;
+	let y =2;
+	y *=x
+        document.write(y);
+
+2. Find the output of the following :- 
+	 let x = 234;
+         document.write(x--);
+         x /= x;
+         let z = 9;
+	 z += x;
+         document.write(z);
+
+3. Find the output of the following :- 
+ 	let x = 5;
+        document.write(x++);//5
+        let z = 10;
+	z += x ** 2;
+        document.write("</br>")
+        document.write(z);
+
+4. Find the output of the following :- 
+        let x = 17;
+        document.write(x++);
+        let z = Math.pow(x,2);
+        document.write("</br>")
+        document.write(--z);
+
+5. Find the output of the following :-  
+        let x = 121;
+	x *= 100 + 50 * 3;
+	let z=123;
+	z +=x;
+        document.write(Math.pow(z,2));
+
+6. Find the output of the following :- 
+        let x = (999 + 67) * 3 + 2 / 2;
+        document.write(x);
+
+7. Find the output of the following :-  
+     let c = 2789;
+     document.write("c++"+(c++));
+     document.write("</br>")
+     
+     document.write("++c"+(++c));
+     document.write("</br>")
+     
+     document.write("c--"+(c--));
+     document.write("</br>")
+     
+     document.write("--c"+(--c));
+     document.write("</br>")
+
+8. Using Ternary operator take input from user and select tea or coffee , then according to user choice , print output in browser.
+
+9. What will be the output of the following code snippet? Explain why.
+let a = 5;
+let b = "5";
+document.write(a == b); 
+document.write(a != b);
+
+10. What will be the output of the following code snippet? Explain why.
+let a = 7;
+let b = "7";
+document.write(a === b); 
+document.write(a !== b); 
+
+11. What will be the output of the following code snippet?
+javascript
+Copy code
+let x = 10;
+let y = 20;
+document.write(x > y); 
+document.write(x < y); 
+
+12. What will be the output of the following code snippet?
+javascript
+Copy code
+let x = 15;
+let y = 15;
+document.write(x >= y); 
+document.write(x <= y); 
+
+13. What will be the output of the following code snippet?
+let p = 10;
+let q = "20";
+document.write(p < q); // Output?
+document.write(p > q); // Output?
+
+14. What will be the output of the following code snippet?
+let a = 15;
+let b = 15;
+let result = a === b ? "Equal" : "Not Equal";
+document.write(result);
+
+15. Write a JavaScript code snippet that take 3 input value and store in identifier and compares three numbers x, y, and z and prints the greatest number using the ternary operator.
+
+16. Write a JavaScript code snippet that take number from user using prompt(), if the input number n is even or odd using the ternary operator and prints "Even" or "Odd".
+
+17. What will be the output of the following code snippet? Explain why.
+let x = 5;
+let y = 15;
+document.write(x < y && x == 5); 
+document.write(x > y && x == 5); 
+document.write(x > y && x == 1); 
+
+18. What will be the output of the following code snippet? Explain why.
+let x = 8;
+let y = 12;
+document.write(x < y || x == 8); 
+document.write(x > y || x == 8); 
+document.write(x > y || x == 2); 
+
+19. What will be the output of the following code snippet? Explain why.
+let z = 100;
+document.write(z != 100); 
+document.write(z != 50);  
+
+20. Suppose you are creating a login system. Write a JavaScript snippet that checks if the username and password are both correct. If both are correct, it should print "Login Successful"; otherwise, it should print "Login Failed". using if else condition.
+
+21. You are offering a discount to customers who either have a membership card or whose total purchase amount is above $100. Write a JavaScript snippet that checks if a customer is eligible for a discount and prints "Discount Applied" or "No Discount".
+
+22. You are building a voting eligibility checker. Write a JavaScript snippet that checks if a person is eligible to vote. The person is eligible if they are above 18 years old and are a citizen of the country.
+
+24. A student can graduate if they have completed all required credits and their GPA is above 2.0. Write a JavaScript snippet that checks if a student meets these requirements and prints "Eligible to Graduate" or "Not Eligible to Graduate".
+
+25. Write a JavaScript program that prompts the user to enter a number and then checks if the number is positive, negative, or zero. Display an appropriate message for each case.
+
+26. Write a JavaScript program that prompts the user to enter a number and checks if the number is even or odd. Display an appropriate message.
+
+27. Write a JavaScript program that prompts the user to enter their age and checks if they are eligible to vote (age 18 and above). Display an appropriate message.
+
+28. Write a JavaScript program that prompts the user to enter their score and then checks the grade based on the score. Use the following grading criteria:
+90-100: A
+80-89: B
+70-79: C
+60-69: D
+Below 60: F
+
+29. Write a JavaScript program that prompts the user to enter their age and checks if they are eligible to apply for a driving license (age 16 and above). Display an appropriate message.
+
+30. Write a JavaScript program that prompts the user to enter the total purchase amount and then calculates the discount based on the following criteria:
+If the amount is greater than $100, a discount of 10% is applied.
+If the amount is between $50 and $100, a discount of 5% is applied.
+If the amount is less than $50, no discount is applied.
+
+31. Create a JavaScript snippet that prompts the user for the current temperature and displays a message based on the temperature range (e.g., "Cold" for below 15°C, "Warm" for 15-25°C, "Hot" for above 25°C).
+
+32. Write a JavaScript program that prompts the user for the total purchase amount and calculates a discount based on the amount. If the amount is more than $100, give a 10% discount, otherwise give a 5% discount.
+
+33. Write a JavaScript program that uses the switch statement to display the name of the day based on a given number (1 for Monday, 2 for Tuesday, ..., 7 for Sunday).
+
+34. Create a JavaScript program that uses the switch statement to assign a grade based on a given score (A for 90-100, B for 80-89, C for 70-79, D for 60-69, F for below 60).
+
+35. Write a JavaScript program that uses the switch statement to display the season based on the given month (e.g., "January" -> "Winter", "April" -> "Spring").
+
+
+36. Implement a simple calculator using the switch statement that performs addition, subtraction, multiplication, or division based on user input two values.
