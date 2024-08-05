@@ -1,0 +1,116 @@
+1. Given two integers, a and b, perform the following operations and write the result:
+
+Compute the bitwise AND of a and b
+Compute the bitwise OR of a and b
+Combine the results using bitwise XOR
+where a = 12 , and b = 25
+
+2. Given an integer x, perform the following operations:
+
+Shift x left by 2 positions
+Shift x right by 1 position
+Add the results together
+
+3. Given an integer n, use bitwise operations to determine if n is even or odd. Print 1 if n is even, and 0 if n is odd.where n is 7.
+
+4. Given an integer a, compute the following:
+
+Bitwise NOT of a
+Bitwise AND of a and NOT a (a & ~a;)
+where a = 5.
+
+5. Swap two integers, a and b, using bitwise XOR without using a temporary variable. Print the values of a and b after swapping.
+
+6. Given two integers, a and b, perform the following operations and write the result:find the binary number also 
+
+let a1 = 12;  
+let b1 = 25;  
+let andResult = a1 & b1;  
+let orResult = a1 | b1;  
+let xorResult = andResult ^ orResult;  
+
+
+
+7. Given an integer x, perform the following operations: find the binary number also 
+
+let x2 = 10;  
+let leftShiftResult = x2 << 2;  
+let rightShiftResult = x2 >> 1;  
+let addResult = leftShiftResult + rightShiftResult;  
+
+8. Given an integer n, use bitwise operations to determine if n is even or odd: and print the result in page , find the binary number also 
+
+
+let n3 = 7;
+let evenOddResult = (n3 & 1) ? 0 : 1;
+
+9. Given an integer a, compute the following: and print the result in page 
+
+let a4 = 5;  
+let notResult = ~a4;  
+let andNotResult = a4 & ~a4;  
+
+10. Swap two integers, a and b, using bitwise XOR without using a temporary variable: and print the result in page
+
+let a5 = 15;  
+let b5 = 27;  
+a5 = a5 ^ b5;
+b5 = a5 ^ b5;
+a5 = a5 ^ b5;
+
+11. //practise question :-
+// let a = 12;  
+// let b = 9;   
+// let result = a & b;
+// document.write(result);
+
+
+12. //practise question :-
+// let a = 5;  
+// let b = 3;  
+// let result = a | b;
+// document.write(result);
+
+13. //practise question :-
+// let a = 15;  // 1111
+// let b = 9;   // 1001
+// let result = a ^ b;
+// document.write(result);
+
+14. //Practise Question :- 
+// let a = 10;  // 0000 1010
+// let result = ~a; // ~1011  =  ~11
+// document.write(result); // -11
+
+15. //Practise Question :- 
+// let a = 3;  // 0011
+// let result = a << 2;
+// document.write(result);
+
+16. //Practise Question :- 
+// let a = 20;  // 10100
+// let result = a >> 2;
+// document.write(result);
+
+17. //Practise Question :- 
+// let a = -16;  // 11111111111111111111111111110000 (Two's complement)
+// let result = a >>> 2;
+// document.write(result);
+
+18. // let a = 20;  // Binary: 00000000000000000000000000010100
+// let result = a >>> 2;  // Equivalent to 20 / 2^2 = 20 / 4 = 5
+// document.write("20 >>> 2 = " + result + "<br>");  // Output: 20 >>> 2 = 5
+
+19. // let x = 40; // Binary: 00000000000000000000000000101000
+// let result = x >>> 3; // Shift right by 3: 00000000000000000000000000000101 (5)
+// document.write("40 >>> 3 = " + result + "<br>"); // Output: 40 >>> 3 = 5
+
+//Additional Questions :- 
+
+20. //Combining Bitwise Operators:
+// let a = 6;  // 0110
+// let b = 3;  // 0011
+// let result = (a & b) | (a ^ b);
+// document.write(result);
+//Answer: 7 (0111) because (a & b) = 0010 and (a ^ b) = 0101, and 0010 | 0101 = 0111.
+
