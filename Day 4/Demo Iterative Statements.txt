@@ -1,0 +1,192 @@
+Introduction to Iterative Statements
+Objective: Explain what iterative statements (loops) are and why they are useful.
+
+Explanation:
+
+Iterative statements allow you to execute a block of code multiple times without having to write the same code repeatedly.
+Loops are used to perform repetitive tasks efficiently.
+
+Loops are used to perform repetitive tasks efficiently.
+
+Examples:
+
+Printing numbers from 1 to 5.
+Iterating over elements in an array.
+
+Types of Iterative Statements in JavaScript
+1. for loop :=- loop a block of code no of times.
+2. while loop  :- loops a block based , on a specific Condition.
+3. do-while loop :- while loop vafiant which runs atleast once.
+4. for in loop :- loop throught the keys of an Object .
+5. for of loop :- loops through the value of an Object.
+6. 
+
+1. for Loop
+Explanation:
+
+The for loop is used when the number of iterations is known beforehand.
+
+for (initialization; condition; update) {
+    // Code to execute
+}
+
+for (let i = 1; i <= 5; i++) 
+{
+    document.write(i + "<br>");
+}
+
+
+//let suppose we want to count total sum of all elements.
+let sum = 0;
+for (let i = 1; i <= 5; i++) 
+{
+    sum += i;
+}
+    document.write(i + "<br>");
+
+
+//Program to add the first n natural number.
+let sum = 0;
+let n = prompt("Enter the value of n");
+n = Number.parseInt(n);
+for (let i = 1; i <n ; i++) 
+{
+    sum += i;
+}
+    document.write("Sum of First "+n + "natural number is : "+sum);
+
+
+//Quiz :- Write a sample for loop of your choice.
+//Factorial number progrm :-
+
+//part of the for loop: initialization (sets up the loop variable), condition (checks if the loop should continue), and update (modifies the loop variable).
+
+2. while Loop
+Explanation:
+The while loop is used when the number of iterations is not known and depends on a condition.
+
+while (condition) {
+    // Code to execute if condition true.
+}
+
+
+let i = 1;
+while (i <= 5) {
+    document.write(i + "<br>");
+    i++;
+}
+
+let n = prompt("Enter the value of n");
+let n = Number.parseInt(n);
+let i = 0;
+while (i <= n) {
+    document.write(i + "<br>");
+    i++;
+}
+
+
+Emphasize that the while loop will run as long as the condition is true. Make sure students understand the importance of updating the loop variable to avoid infinite loops.
+
+3. do...while Loop
+Explanation:
+
+The do...while loop is similar to the while loop but guarantees that the code block will be executed at least once.
+Syntax:
+
+do {
+    // Code to execute
+} while (condition);
+
+
+let n = prompt("Enter the value of n");
+let n = Number.parseInt(n);
+let i = 0;
+do {
+    document.write(i + "<br>");
+    i++;
+} while (i < 5);
+
+//Quiz :- Write a sample program to demonstrate do while loop. 
+
+4. For...in Loop:
+//Its an advanced version of for loop 
+//Normally we use like these 
+//Nested Object we can say:- 
+
+let person = {
+    name: "Tarun",
+    age: 25,
+    city: "Bhopal"
+};
+
+
+for (let key in person) {
+    document.write(key + ": " + person[key] + "<br>");
+}
+
+// this example is of array we will see further of these example :-
+
+let company = {
+    name: "TechCorp",
+    address: {
+        street: "123 Tech Lane",
+        city: "Innovate City"
+    },
+    employees: ["Alice", "Bob", "Charlie"]
+};
+
+document.write("Company Name: " + company.name + "<br>");
+document.write("Company City: " + company.address.city + "<br>");
+document.write("Employees: " + company.employees.join(", ") + "<br>");// we will see that methods afterwards
+
+
+5. For...of Loop:
+The for...of loop is used to iterate over iterable objects like arrays, strings, etc.
+
+let a = (let b of "DebugShala")
+{
+    document.write(b + "<br>");
+}
+let fruits = ["Apple", "Banana", "Cherry"];
+
+for (let fruit of fruits) {
+    document.write(fruit + "<br>");
+}
+//what will be the scope of let variable outside block.
+//Ans :- Ans not accesible.
+
+//Note :- We are using these methods in Arrays. so be patient.
+
+6. Array's forEach Method:
+
+//we will seen this method also depp in Array.
+The forEach method executes a provided function once for each array element.
+
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(function(number) {
+    document.write("Number: " + number + "<br>");
+});
+
+
+
+
+Practical Exercises
+Exercise 1: Simple Counting
+
+Use a for loop to count from 1 to 10 and display each number.
+Exercise 2: Sum of Numbers
+
+Use a while loop to sum numbers from 1 to 100 and display the result.
+Exercise 3: Multiplication Table
+
+Use a for loop to generate a multiplication table (e.g., 1 to 10).
+Exercise 4: User Input
+
+Use a do...while loop to repeatedly ask the user for input until they enter "exit".
+
+
+5. Interactive Activities
+Activity 1: Loop Visualization
+
+Use a tool or online visualizer to demonstrate how different loops iterate through the code.

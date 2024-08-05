@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operators in js </title>
+</head>
+<body>
+    
+    <script>
+// Bitwise Operators
+// Bitwise operators work on the binary representation of numbers. They operate at the bit level.
+//Binary representation:- It is a way of expressing numbers using only two digits: 0 and 1. This is in contrast to the decimal system, which uses ten digits (0-9). Each digit in a binary number is called a bit.
+
+
+//0000 0000
+
+
+// For example, in the binary number 1011, the positional values are:
+// 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0
+// = 1 * 8 + 0 * 4 + 1 * 2 + 1 * 1
+// = 8 + 0 + 2 + 1
+// = 11
+
+// AND (&): Sets each bit to 1 if both bits are 1.
+// true & true => true
+//  1    &   1   => 1 
+//  1    &   0   => 0
+//  0    &   1   => 0
+//  0    &   0   => 0
+
+// let a = 5;  // 0101
+// let b = 3;  // 0011
+// let result = a & b;  // 0001 (1)
+// document.write("5 & 3 = " + result + "<br>");  // Output: 5 & 3 = 1
+
+//practise question :-
+// let a = 12;  // 1100
+// let b = 9;   // 1001
+// let result = a & b;
+// document.write(result);
+
+// OR (|): Sets each bit to 1 if one of the bits is 1.
+// let a = 5;  // 0101
+// let b = 3;  // 0011
+// let result = a | b;  // 0111 (7)
+// document.write("5 | 3 = " + result + "<br>");  // Output: 5 | 3 = 7
+
+//practise question :-
+// let a = 5;  // 0101
+// let b = 3;  // 0011
+// let result = a | b;
+// document.write(result);
+
+// XOR (^): Sets each bit to 1 if only one of the bits is 1.
+// true & true => false
+//  1    &   1   => 0 
+//  1    &   0   => 1
+//  0    &   1   => 1
+//  0    &   0   => 0
+// let a = 5;  // 0101
+// let b = 3;  // 0011
+// let result = a ^ b;  // 0110 (6)
+// document.write("5 ^ 3 = " + result + "<br>");  // Output: 5 ^ 3 = 6
+
+//practise question :-
+// let a = 15;  // 1111
+// let b = 9;   // 1001
+// let result = a ^ b;
+// document.write(result);
+
+
+// NOT (~): Inverts all the bits.
+//  let a = -5;  // 0101 in binary representation
+// Inverting each bit, we get: ~0000 0101 = 1111 1010
+//Invert the bits again: 1111 1010 => 0000 0101
+//Add 1 to the inverted result: 0000 0101 + 1 = 0000 0110
+//The result 0000 0110 is 6 in binary. Therefore, 1111 1010 in two's complement is -6.
+//Hence, ~5 results in -6.
+// let result = ~a;  // 1010 (-6, in two's complement)
+// document.write("~5 = " + result + "<br>");  // Output: ~5 = -6
+
+//Practise Question :- 
+// let a = 10;  // 0000 1010
+// let result = ~a; // ~1011  =  ~11
+// document.write(result); // -11
+
+
+// Left Shift (<<): Shifts bits to the left and fills with 0s.
+//  let a = 5;  // 0101
+// let result = a << 3;  //5  *   // or 2^n.
+// document.write("5 << 1 = " + result + "<br>");  // Output: 5 << 1 = 10
+//5<<1 => 5 * 2 to the power 1 => 10
+//5<<2 => 5* 2 to the power 2 => 20
+//5<<2 => 5* 2 to the power 3 => 8 
+
+//Practise Question :- 
+// let a = 3;  // 0011
+// let result = a << 2;
+// document.write(result);
+
+
+// Right Shift (>>): Shifts bits to the right and fills with the sign bit.
+//  let a = 5;  // 0101  // 
+// let result = a >> 1;  // 0010 (2) // 5 / 2 to the power of 1
+// document.write("5 >> 1 = " + result + "<br>");  // Output: 5 >> 1 = 2  
+//20 >> 1 => 20/2 to the power 1 => 10
+//20 >> 2 => 20/2 to the power 2 => 5
+
+//Practise Question :- 
+// let a = 20;  // 10100
+// let result = a >> 2;
+// document.write(result);
+
+// Unsigned Right Shift (>>>): Shifts bits to the right and fills with 0s.
+// let a = 5;  // 0101
+// let result = a >>> 1;  // 0010 (2)
+// document.write("5 >>> 1 = " + result + "<br>");  // Output: 5 >>> 1 = 2
+
+//Practise Question :- 
+// let a = -16;  // 11111111111111111111111111110000 (Two's complement)
+// let result = a >>> 2;
+// document.write(result);
+
+// let a = 20;  // Binary: 00000000000000000000000000010100
+// let result = a >>> 2;  // Equivalent to 20 / 2^2 = 20 / 4 = 5
+// document.write("20 >>> 2 = " + result + "<br>");  // Output: 20 >>> 2 = 5
+
+// let x = 40; // Binary: 00000000000000000000000000101000
+// let result = x >>> 3; // Shift right by 3: 00000000000000000000000000000101 (5)
+// document.write("40 >>> 3 = " + result + "<br>"); // Output: 40 >>> 3 = 5
+
+//Additional Questions :- 
+
+//Combining Bitwise Operators:
+// let a = 6;  // 0110
+// let b = 3;  // 0011
+// let result = (a & b) | (a ^ b);
+// document.write(result);
+//Answer: 7 (0111) because (a & b) = 0010 and (a ^ b) = 0101, and 0010 | 0101 = 0111.
+
+//Mixing Bitwise with Arithmetic:
+// let a = 7;  // 0111
+// let result = (a << 2) + (a >> 1);
+// document.write(result);
+
+
+</script>
+</body>
+</html>

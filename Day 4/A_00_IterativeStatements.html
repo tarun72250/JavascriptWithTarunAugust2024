@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative Statements in js </title>
+</head>
+<body>
+    
+    <script>
+
+//Iterative statements allow you to execute a block of code multiple times without having to write the same code repeatedly.
+//Loops are used to perform repetitive tasks efficiently.
+
+
+        // document.write(1);
+        // document.write(2);
+        // document.write(3);
+        // document.write(4);
+        // document.write(5);
+
+        //Example :- Print 1 to 500
+
+//Types of Iteratibve Statements :- 
+
+// Types of Iterative Statements in JavaScript
+// 1. for loop :=- loop a block of code no of times.
+// Explanation:
+// The for loop is used when the number of iterations is known beforehand.
+
+// for( initilization  ; condition ; updation )
+// {
+//     code to execute 
+// }
+
+let n = prompt("Enter a number");
+n =  Number.parseInt(n);
+
+let sum = 1;
+for(let i = 1 ; i <= n ; i++ )
+{
+    //document.write(i +" </br>");
+     sum *= i;
+}
+document.write("Factorial of "+n +" is "+sum);
+
+// 2. while loop  :- loops a block based , on a specific Condition.
+
+
+// 3. do-while loop :- while loop variant which runs atleast once.
+
+// 4. for in loop :- loop throught the keys of an Object .
+
+// 5. for of loop :- loops through the value of an Object.
+
+// 6. ForEach method of Array :- 
+
+
+        
+    </script>
+</body>
+</html>

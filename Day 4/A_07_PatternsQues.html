@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns Question in js </title>
+</head>
+<body>
+    
+    <script>
+
+/*
+Right-Angle Triangle Pattern
+*
+**
+***
+****
+*****
+
+*/
+        function rightAngleTrianglePattern(n) {
+    for (let i = 1; i <= n; i++) {
+        let str = '';
+        for (let j = 1; j <= i; j++) {
+            str += '*';
+        }
+        console.log(str);
+    }
+}
+
+rightAngleTrianglePattern(5);
+
+
+/*
+Inverted Right-Angle Triangle Pattern
+*****
+****
+***
+**
+*
+
+*/
+
+function invertedRightAngleTrianglePattern(n) {
+    for (let i = n; i >= 1; i--) {
+        let str = '';
+        for (let j = 1; j <= i; j++) {
+            str += '*';
+        }
+        console.log(str);
+    }
+}
+
+invertedRightAngleTrianglePattern(5);
+
+    </script>
+</body>
+</html>

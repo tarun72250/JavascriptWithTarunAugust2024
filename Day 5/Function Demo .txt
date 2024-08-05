@@ -1,0 +1,95 @@
+What is a Function in JavaScript?
+A function in JavaScript is a reusable block of code designed to perform a particular task. Functions allow you to write modular, maintainable, and efficient code. They can take inputs, called parameters, and return an output.
+
+//In previoius chapter we seen like we had to write some comple logic again and again , these will lead too much time , so for that we had separate that part of logic in form of functions.
+
+Why Use Functions?
+Modularity: Break down complex problems into smaller, manageable parts.
+Reusability: Write code once and reuse it multiple times.
+Maintainability: Easier to update and manage your code.
+Abstraction: Hide complex logic and expose a simple interface.
+
+
+//let supoose we want to write a logic on add some numbers and and divide by 2 and add 1 in all .
+let a = 1;
+let b = 2;
+let c = 3;
+
+document.write(1+(a+b)/2);
+document.write(1+(b+c)/2);
+document.write(1+(c+a)/2);
+
+//so again n again my requirement s changed , so according to that we want to changed in so many lines of code.
+
+function onePlusAvg(x , y)
+{
+    return 1 +(x+y)/2;
+}
+
+//fn invocation and fn calling is these 
+
+document.write(onePlusAvg(a,b));
+document.write(onePlusAvg(b,c));
+document.write(onePlusAvg(c,a));
+
+if I want to round that number .
+
+function onePlusAvg(x , y)
+{
+    return Math.round(1 +(x+y)/2);
+}
+
+----------------------------------
+
+Declaring a Function :- 
+
+There are several ways to declare functions in JavaScript:
+
+Function Declaration
+
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+--------------------------------------------------------
+Function Expression
+
+const greet = function(name) {
+    return `Hello, ${name}!`;
+};
+--------------------------------------------------------
+
+Arrow Function (ES6)
+
+const greet = (name) => `Hello, ${name}!`;
+
+--------------------------------------------------------
+Calling a Particular Function :-
+
+console.log(greet("Alice")); // Hello, Alice!
+
+
+--------------------------------------------------------
+Practical Example: Sum of Two Numbers
+Function Declaration
+
+function sum(a, b) {
+    return a + b;
+}
+
+Calling a fn :- 
+console.log(sum(5, 3)); // 8
+
+Arrow Function
+
+const sum = (a, b) => a + b;
+
+console.log(sum(5, 3)); // 8
+
+Real-Life Analogy
+Think of a function like a coffee machine:
+
+Inputs (Parameters): Coffee beans, water, and milk.
+Process (Function Body): The machine grinds the beans, heats the water, and mixes everything.
+Output (Return Value): A cup of coffee.
+You don’t need to know how the machine works internally; you just provide the inputs and get the output.
