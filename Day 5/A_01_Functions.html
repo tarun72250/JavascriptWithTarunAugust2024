@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in js </title>
+</head>
+<body>
+    <script>
+// What is a Function in JavaScript?
+// A function in JavaScript is a reusable block of code designed to perform a particular task. Functions allow you to write modular, maintainable, and efficient code. They can take inputs, called parameters, and return an output.
+
+//In previoius chapter we seen like we had to write some complex logic again and again , these will lead too much time , so for that we had separate that part of logic in form of functions.
+
+
+//-----------------------------------------------
+//let supoose we want to write a logic on add some numbers and and divide by 2 and add 1 in all .
+
+//  let a = 10;
+//  let b = 20;
+//  let c = 30;
+
+//  document.write(1+(a+b)/2);
+//  document.write(1+(b+c)/2);
+//  document.write(1+(a+c)/2);
+
+ //so again n again my requirement was changed , so according to that we want to changed in so many lines of code.
+//so we using else like these we used to create some functionm in js code.
+
+
+
+
+
+//-----------------------------------------------
+//A Type :- function declaration
+// function onePlusAvg(x,y)
+// {
+//     document.write("</br>");
+//     //return 5 + (x+y) /2;
+//     return Math.round(5 + (x+y) /2);
+// }
+
+//  let a = 11;
+//  let b = 20;
+//  let c = 31;
+
+//  //2. fn invocation and fn calling is these 
+
+// document.write(onePlusAvg(a,b));
+// document.write(onePlusAvg(b,c));
+// document.write(onePlusAvg(c,a));
+
+//-----------------------------------------------
+//if my fn is not returning anything
+
+// function greet(name)
+// {
+//     document.write(`Hello ${name}`);
+// }
+// greet("Gautam");
+
+//-----------------------------------------------
+// function greet(name)
+// {
+//     return `Hello , ${name}`;
+// }
+
+// document.write(greet("Gautam"));
+
+
+//-----------------------------------------------
+
+//B Type :- Arrow Function (ES6):-
+//ES6 introduced a new way to define functions using arrow functions. Arrow functions provide a shorter syntax.
+
+// //const a = () =>{};
+// const greet = (name)=> `Hello , ${name}`;
+
+// document.write(greet("Jayendra Jethalala Gada"));
+
+//-------------------------------------------------
+
+//sum of two numbers
+// function sum(a,b){
+//     return a+b;
+// }
+
+// const sum =(a,b)=>{return a+b};
+// //const sum =(a,b)=> a+b;
+
+//  document.write(sum(2,3));
+
+ //document.write(a); // here a is block level scope specific
+//-------------------------------------------------
+//Can  we Create a fn without its parameter 
+
+// const hello =()=>{
+//     document.write("Hello From DebugShala..!");
+// }
+
+// hello()
+//-------------------------------------------------
+const hello =()=>{
+    document.write("Hello From DebugShala..!");
+    return "hi";
+}
+
+let a = hello();
+document.write(a);
+
+
+
+    </script>
+</body>
+</html>

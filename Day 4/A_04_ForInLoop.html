@@ -6,6 +6,39 @@
     <title>For in Loop In JS</title>
 </head>
 <body>
-    
+    <script>
+
+//4. For...in Loop:
+//Its an advanced version of for loop 
+//Normally we use like these 
+//Nested Object we can say:- 
+
+//Object example using for in loop
+// let person = {
+//     name: "Tarun",
+//     age: 25,
+//     city: "Bhopal"
+// };
+
+// for( let gautam in person)
+// {
+//     document.write(gautam + " : "+person[gautam]+ "</br>")
+// }
+
+let company = {
+    name: "DebugShala",
+    address: {
+        street: "202 CS Naidu Arcade",
+        city: "Indore"
+    },
+    employees: ["Alice", "Bob", "Charlie"]
+};
+
+document.write("Comapny Name :"+company.name+"</br>")
+document.write("Comapny Street :"+company.address.street+"</br>")
+document.write("Comapny City :"+company.address.city+"</br>")
+
+
+    </script>
 </body>
 </html>

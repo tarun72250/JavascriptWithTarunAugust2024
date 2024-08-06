@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Function in Javascript</title>
+</head>
+<body>
+    <script>
+        
+// 1. Function to Calculate Factorial
+// Here, factorial is a recursive function that calculates the factorial of a number.
+
+function factorial(n)
+{
+    let mul = 1;
+    for(let i = 1 ; i <=n ; i++)
+    {
+        mul  *= i;
+    }
+    document.write(mul);
+}
+
+//factorial(5);
+
+//recursive way
+
+function recFactorial(n)
+{
+    if(n === 0 || n === 1)
+    {
+        return 1;
+    }
+    return n * recFactorial(n-1);
+}
+
+
+//let a = recFactorial(5);
+//document.write(a);
+
+///--------------------------------
+//Write a Function	to	check whether the	given	number	is	PRIME	or	not?	
+
+function isPrime(n)
+{
+    if(n <= 1) return false;
+    for(let i =2 ; i< n ; i++)
+    {
+        if(n % i === 0)
+        {
+           return false; 
+        }
+    }
+    return true;
+}
+
+// let userInput = 38;
+// document.write(`is ${userInput} a prime number ?`, isPrime(userInput))
+
+
+
+// 3.	Write a	Function	to	Print 1	to N numbers?	
+// 4. Write	a	Function	to	Print	REVERSE	of	N	to	1	numbers?
+// 5. Write	a	Function	to	display	sum	of	1	to	N	numbers?	
+// 6. Write	a	Function	to	check	given	number	is	EVEN	or	ODD?	
+// 7. Write	a	Function	to	display	PRIME	NUMBERS	from	1	to	n?
+// 8. Write	a	Function	to	find	SUM	OF	PRIME	numbers?	
+// 9. Write	a	Function	to	display	MULTIPLICATION	table?
+// 10. Write	a	program	to	display	MULTIPLICATION	TABLES? , till n is typed by user
+// 11. Write	program	weather	the	number	is	PERFECT	NUMBER	or	not?
+// 12. Write	a	program	to	display	RANGE	of	PERFECT	NUMBERS?
+// 13. Write	a	program	to	check	the	given	number	is	PALINDROME	or	not?
+// 14. Write	a	program	to	find	the	FACTORIAL	of	a	given	number?	
+// 15. Write	a	program	to	find	the	FACTORIAL	of	a	given	RANGE	of	numbers?
+
+
+    </script>
+</body>
+</html>

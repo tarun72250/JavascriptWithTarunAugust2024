@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Functions in js</title>
+</head>
+<body>
+    <script>
+//1. 
+// * * * * * 
+// * * * * * 
+// * * * * * 
+// * * * * * 
+// * * * * * 
+
+function printSquarePattern(n)
+{
+    //theese is used for rows
+    for(let i = 0 ; i < n ; i++)
+    {
+        //let row = '';
+        document.write("*");
+         //theese is used for columns
+         for(let j = 1 ; j <n ; j++)
+         {
+                //row = row + '*';
+                //row += '* ';
+                document.write("*");
+         }
+         document.write("</br>")
+         
+    }
+}
+
+//printSquarePattern(5);
+
+//2.
+//* 
+// * * 
+// * * * 
+// * * * * 
+// * * * * * 
+
+
+
+function printRightAngledTriablePattern(n)
+{
+    //theese is used for rows
+    for(let i = 1 ; i <=n ; i++)
+    {
+        //let row = '';
+        document.write("*");
+         //theese is used for columns
+         for(let j = 1 ; j < i ; j++)
+         {
+                //row = row + '*';
+                //row += '* ';
+                document.write("*");
+         }
+         document.write("</br>")
+         
+    }
+}
+//printRightAngledTriablePattern(5);
+
+//3.
+// * * * * * 
+// * * * * 
+// * * * 
+// * * 
+// * 
+
+//4. 
+//     *    
+//    ***   
+//   *****  
+//  ******* 
+// *********
+
+//5
+//     *    
+//    ***   
+//   *****  
+//  ******* 
+// *********
+//  ******* 
+//   *****  
+//    ***   
+//     *  
+
+//6
+// * * * * * 
+// *       * 
+// *       * 
+// *       * 
+// * * * * * 
+    </script>
+</body>
+</html>

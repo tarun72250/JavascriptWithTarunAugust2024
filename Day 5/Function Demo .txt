@@ -19,14 +19,16 @@ document.write(1+(a+b)/2);
 document.write(1+(b+c)/2);
 document.write(1+(c+a)/2);
 
-//so again n again my requirement s changed , so according to that we want to changed in so many lines of code.
+//so again n again my requirement was changed , so according to that we want to changed in so many lines of code.
+//so we using else like these we used to create some functionm in js code.
 
+//1. function declaration
 function onePlusAvg(x , y)
 {
     return 1 +(x+y)/2;
 }
 
-//fn invocation and fn calling is these 
+//2. fn invocation and fn calling is these 
 
 document.write(onePlusAvg(a,b));
 document.write(onePlusAvg(b,c));
@@ -39,7 +41,13 @@ function onePlusAvg(x , y)
     return Math.round(1 +(x+y)/2);
 }
 
-----------------------------------
+--------------------------------------------------------------------
+
+Function Parameters and Arguments
+Functions can take parameters and be called with arguments.
+
+--------------------------------------------------------------------
+
 
 Declaring a Function :- 
 
@@ -51,40 +59,82 @@ function greet(name) {
     return `Hello, ${name}!`;
 }
 
+document.write(greet("Bob"));   // Hello, Bob!
+document.write(greet("Alice"));  // Hello, Alice!
+
 --------------------------------------------------------
-Function Expression
+Function Expression // Anonymous Function Expression
 
 const greet = function(name) {
     return `Hello, ${name}!`;
 };
+
+let result = greet();
+document.write(result);
+
+Return Values
+Functions can return values using the return statement.
 --------------------------------------------------------
 
 Arrow Function (ES6)
+ES6 introduced a new way to define functions using arrow functions. Arrow functions provide a shorter syntax.
 
 const greet = (name) => `Hello, ${name}!`;
+
+let result = greet("Ram");
+document.write(result);
 
 --------------------------------------------------------
 Calling a Particular Function :-
 
-console.log(greet("Alice")); // Hello, Alice!
+document.write(greet("Alice")); // Hello, Alice!
 
 
 --------------------------------------------------------
 Practical Example: Sum of Two Numbers
 Function Declaration
 
-function sum(a, b) {
+function sum(a, b)// here the parameter acts as local variable in function 
+ {
     return a + b;
 }
 
 Calling a fn :- 
 console.log(sum(5, 3)); // 8
 
+//What is function :- A javascript function is a block of code , designed in such a way to perform a particular task.
+--------------------------------------------------------
+
 Arrow Function
+
+//syntax :- 
+//const sum = () =>{};
 
 const sum = (a, b) => a + b;
 
 console.log(sum(5, 3)); // 8
+--------------------------------------------------------
+
+Can  we Create a fn without its parameter 
+const hello()=>{
+    document.write(" hello from DebugShala....");
+}
+
+hello();// calling a fn or invoking a fn 
+
+--------------------------------------------------------
+
+if our fn can return some value 
+
+const hello()=>{
+    document.write(" hello from DebugShala....");
+    return "hi";
+}
+
+let v = hello();// calling a fn or invoking a fn 
+document.write();
+
+--------------------------------------------------------
 
 Real-Life Analogy
 Think of a function like a coffee machine:
@@ -93,3 +143,252 @@ Inputs (Parameters): Coffee beans, water, and milk.
 Process (Function Body): The machine grinds the beans, heats the water, and mixes everything.
 Output (Return Value): A cup of coffee.
 You don’t need to know how the machine works internally; you just provide the inputs and get the output.
+
+--------------------------------------------------------
+
+Pattern Function Demo
+
+1. 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+function printSquarePattern(n) {
+    for (let i = 0; i < n; i++) {
+        let row = '';
+        for (let j = 0; j < n; j++) {
+            row += '* ';
+        }
+        console.log(row);
+    }
+}
+
+// Example usage:
+printSquarePattern(5);
+
+
+2. 
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+function printRightAngledTrianglePattern(n) {
+    for (let i = 1; i <= n; i++) {
+        let row = '';
+        for (let j = 0; j < i; j++) {
+            row += '* ';
+        }
+        console.log(row);
+    }
+}
+
+// Example usage:
+printRightAngledTrianglePattern(5);
+
+3.
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+function printInvertedRightAngledTrianglePattern(n) {
+    for (let i = n; i > 0; i--) {
+        let row = '';
+        for (let j = 0; j < i; j++) {
+            row += '* ';
+        }
+        console.log(row);
+    }
+}
+
+// Example usage:
+printInvertedRightAngledTrianglePattern(5);
+
+4. 
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+
+function printDiamondPattern(n) {
+    // Upper half
+    for (let i = 1; i <= n; i++) {
+        let row = '';
+        for (let j = 0; j < n - i; j++) {
+            row += ' ';
+        }
+        for (let k = 0; k < (2 * i - 1); k++) {
+            row += '*';
+        }
+        console.log(row);
+    }
+    
+    // Lower half
+    for (let i = n - 1; i > 0; i--) {
+        let row = '';
+        for (let j = 0; j < n - i; j++) {
+            row += ' ';
+        }
+        for (let k = 0; k < (2 * i - 1); k++) {
+            row += '*';
+        }
+        console.log(row);
+    }
+}
+
+// Example usage:
+printDiamondPattern(5);
+
+5. 
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+
+function printDiamondPattern(n) {
+    // Upper half
+    for (let i = 1; i <= n; i++) {
+        let row = '';
+        for (let j = 0; j < n - i; j++) {
+            row += ' ';
+        }
+        for (let k = 0; k < (2 * i - 1); k++) {
+            row += '*';
+        }
+        console.log(row);
+    }
+    
+    // Lower half
+    for (let i = n - 1; i > 0; i--) {
+        let row = '';
+        for (let j = 0; j < n - i; j++) {
+            row += ' ';
+        }
+        for (let k = 0; k < (2 * i - 1); k++) {
+            row += '*';
+        }
+        console.log(row);
+    }
+}
+
+// Example usage:
+printDiamondPattern(5);
+
+6. 
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+
+function printHollowSquarePattern(n) {
+    for (let i = 0; i < n; i++) {
+        let row = '';
+        for (let j = 0; j < n; j++) {
+            if (i === 0 || i === n - 1 || j === 0 || j === n - 1) {
+                row += '* ';
+            } else {
+                row += '  ';
+            }
+        }
+        console.log(row);
+    }
+}
+
+// Example usage:
+printHollowSquarePattern(5);
+
+--------------------------------------------------------
+Logical Function Demo 
+
+1. Function to Calculate Factorial
+Here, factorial is a recursive function that calculates the factorial of a number.
+
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // 120
+---------------------------------
+
+2. Write a Function	to	check whether the	given	number	is	PRIME	or	not?	
+This isPrime function checks if a number is a prime number.
+
+//
+function isPrime(num) 
+{
+    if (num <= 1) return false; // Numbers less than or equal to 1 are not prime
+    for (let i = 2; i < num; i++) 
+    {
+        if (num % i === 0) 
+        {
+            return false; // If num is divisible by any number other than 1 and itself
+        }
+    }
+    return true; // If no divisors were found, num is a prime number
+}
+// Example of user input (in a real-world scenario, this could be from a form or console input)
+const userInput = 11;
+console.log(`Is ${userInput} a prime number? `, isPrime(userInput));
+
+
+//shortest way 
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+console.log(isPrime(5)); // true
+console.log(isPrime(4)); // false
+
+//
+---------------------------------
+
+3.	Write a	Function	to	Print 1	to N numbers?	
+4. Write	a	Function	to	Print	REVERSE	of	N	to	1	numbers?
+5. Write	a	Function	to	display	sum	of	1	to	N	numbers?	
+6. Write	a	Function	to	check	given	number	is	EVEN	or	ODD?	
+7. Write	a	Function	to	display	PRIME	NUMBERS	from	1	to	n?
+8. Write	a	Function	to	find	SUM	OF	PRIME	numbers?	
+9. Write	a	Function	to	display	MULTIPLICATION	table?
+10. Write	a	program	to	display	MULTIPLICATION	TABLES?
+
+// Function to generate and display multiplication tables
+function generateMultiplicationTables(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log(`Multiplication Table for ${i}`);
+        for (let j = 1; j <= 10; j++) {
+            console.log(`${i} x ${j} = ${i * j}`);
+        }
+        console.log(''); // Blank line for better readability
+    }
+}
+
+// Example usage:
+let userNumber = parseInt(prompt("Enter a number to generate multiplication tables up to that number:"));
+generateMultiplicationTables(userNumber);
+
+11. Write	program	weather	the	number	is	PERFECT	NUMBER	or	not?
+12. Write	a	program	to	display	RANGE	of	PERFECT	NUMBERS?
+13. Write	a	program	to	check	the	given	number	is	PALINDROME	or	not?
+14. Write	a	program	to	find	the	FACTORIAL	of	a	given	number?	
+15. Write	a	program	to	find	the	FACTORIAL	of	a	given	RANGE	of	numbers?
+
+
