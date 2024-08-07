@@ -1,0 +1,241 @@
+Introduction to Strings
+Definition of a String:
+
+What is String?
+Collection of characters.
+A string is a sequence of characters used to represent text.
+In JavaScript, strings are immutable.(unchangeable , )
+
+Declaring Strings having three ways:
+1.
+Using single quotes: 'Hello'
+2.
+Using double quotes: "Hello"
+3. these are the part of modern Javascript
+Using backticks (template literals): `Hello`
+
+Example:
+let singleQuoteString = 'Hello';
+let doubleQuoteString = "Hello";
+let templateLiteralString = `Hello`;
+
+Common String Properties and Methods
+
+Length Property in String:
+string.length
+Returns the length of the string.
+
+Example:
+let str = "Hello, World!";
+document.write(str.length); // Output: 13
+
+Accessing Characters in String:
+Using bracket notation: string[index]
+Using charAt(index)
+
+Note :- Always String starts from 0.
+
+Example:
+let str = "Hello";
+document.write(str[1]); // Output: e
+document.write(str.charAt(1)); // Output: e
+--------------------------------------------------------------------------------------
+
+Template Literals:
+Multiline strings and string interpolation using backticks (`).
+Embedding expressions: `${expression}`
+
+Example:
+let name = "JavaScript";
+let str = `Hello, ${name}!`;
+document.write(str); // Output: Hello, JavaScript!
+
+
+Note :- Template literal use bacticks instead of quotes to define a String.
+we can insert variable directly in template literal . this is called as String interpolation.
+
+let fname = "Tarun";
+let company = "Mindnerves pvt ltd";
+
+//Tarun is an employee of Mindnerves pvt ltd
+
+let sentence = `${fname} is an employee of ${company}`;
+document.write(sentence);
+
+Note :- With template literal u can use single quote and double quote both inside a String.
+let sentence1 = `My name "is" Tarun's'`;
+
+--------------------------------------------------------------------------------------
+
+Escape Sequence Character :- \'    \n    \r
+
+if u trying to print the following string , javascript will misunderstand it.
+let institute = 'DebugSahala Trainin's';
+document.write(institute);
+
+we can use single quote escape sequence to solve the problem.
+let institute = 'DebugSahala Trainin\'s';
+document.write(institute);
+
+similarily we can use \" inside a string with double quotes.
+let strDoubleQuotes = "This is a \"quoted\" word.";
+document.write(strDoubleQuotes + "<br>"); // Output: This is a "quoted" word.
+
+        //other escape sequence characters are as follows:-
+        //  \n => newLine
+let strNewLine = "This is the first line.\nThis is the second line.";
+console.log(strNewLine); // This will print each part on a new line in the console
+                                            // This is the second line.
+
+//\t => tab
+let strTab = "This is a tabbed \t space.";
+console.log(strTab); // Output: This is a tabbed    space.
+--------------------------------------------------------------------------------------
+Demo in StringMethods.html :-
+
+length() Property 
+let name = "Tarun\n"; //here 6 print bcoz escape sequence character are there 
+document.write(name.length);
+
+
+--------------------------------------------------------------------------------------
+
+toUpperCase() and toLowerCase():
+string.toUpperCase()
+string.toLowerCase()
+
+Example:
+let str = "Hello World";
+document.write(str.toUpperCase()); // Output: HELLO WORLD
+document.write(str.toLowerCase()); // Output: hello world
+
+--------------------------------------------------------------------------------------
+
+String Methods for Manipulation
+Concatenation:
+Using the + operator
+Using concat()
+
+Example:
+let str1 = "Hello";
+let str2 = "World";
+document.write(str1 + " " + str2); // Output: Hello World
+document.write(str1.concat(" ", str2)); // Output: Hello World
+--------------------------------------------------------------------------------------
+
+//Example:
+let str = "ABCDE";
+//str.slice(start, end);
+//document.write(str.slice(0, 2)); // Output: AB
+
+//document.write("</br>")
+//str.slice(start);
+//document.write(str.slice(2)); // Output: CDE
+
+//--------------------------------------------------------------------------------------
+
+//substring();
+//Example:
+//let str1 = "ABCDE";
+//str1.substring(start, end)
+//document.write(str1.substring(0, 3)); // Output: ABC
+
+//--------------------------------------------------------------------------------------
+
+//substr():
+//Example:
+let str2 = "ABCDE";
+//str2.substr(start, length)
+document.write(str2.substr(1, 3)); // Output: BCD
+
+--------------------------------------------------------------------------------------
+
+4. Searching and Replacing in Strings
+
+indexOf() and lastIndexOf():
+string.indexOf(searchValue)
+string.lastIndexOf(searchValue)
+
+Example:
+let str = "Hello, World!";
+document.write(str.indexOf("World")); // Output: 7
+document.write(str.lastIndexOf("o")); // Output: 8
+--------------------------------------------------------------------------------------
+
+includes(), startsWith(), and endsWith(): they all return boolean value 
+string.includes(searchValue) 
+string.startsWith(searchValue)
+string.endsWith(searchValue)
+
+Example:
+let str = "Hello, World!";
+document.write(str.includes("World")); // Output: true
+document.write(str.startsWith("Hello")); // Output: true
+document.write(str.endsWith("!")); // Output: true
+
+--------------------------------------------------------------------------------------
+
+replace() and replaceAll():
+string.replace(searchValue, newValue)
+string.replaceAll(searchValue, newValue)
+
+Example:
+let str = "Hello, World!";
+document.write(str.replace("World", "JavaScript")); // Output: Hello, JavaScript!
+--------------------------------------------------------------------------------------
+
+5. Advanced String Methods
+
+split():
+Splits a string into an array of substrings based on a delimiter.
+string.split(delimiter)
+
+Example:
+let str = "Hello, World! , From , DebugShala";
+let arr = str.split(", ");
+document.write(arr[0]); // Output: Hello
+document.write("</br>");
+document.write(arr[1]); // Output: World!
+document.write("</br>");
+document.write(arr[2]); // Output: From!
+document.write("</br>");
+document.write(arr[3]); // Output: DebugShala!
+
+--------------------------------------------------------------------------------------
+
+trim():
+Removes whitespace from both ends of the string.
+string.trim()
+
+Example:
+let str = "   Hello World   ";
+document.write(str.trim()); // Output: Hello World 
+
+--------------------------------------------------------------------------------------
+
+6. Practical Exercises
+
+Exercise 1: Create a string and display its length.
+Exercise 2: Extract a substring from a given string.
+Exercise 3: Replace a word in a string with another word.
+Exercise 4: Convert a string to uppercase and lowercase.
+Exercise 5: Split a string into an array of words.
+
+Example:
+let sentence = "JavaScript is a powerful language.";
+document.write(sentence.length); // Exercise 1
+document.write(sentence.slice(0, 10)); // Exercise 2
+document.write(sentence.replace("powerful", "versatile")); // Exercise 3
+document.write(sentence.toUpperCase()); // Exercise 4
+document.write(sentence.toLowerCase()); // Exercise 4
+let words = sentence.split(" ");
+document.write(words); // Exercise 5
+
+------------------------------------------------------------------------------------------
+
+Refrence :- 
+w3 String for methods of 
+Mdn docs for string methods
+
+------------------------------------------------------------------------------------------
+

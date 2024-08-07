@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in js </title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+
+What is String?
+Collection of characters.
+A string is a sequence of characters used to represent text.
+In JavaScript, strings are immutable.(unchangeable)
+
+Declaring Strings having three ways:
+
+1.
+Using single quotes: 'Hello'
+2.
+Using double quotes: "Hello"
+3. these are the part of modern Javascript
+Using backticks (template literals): `Hello`
+
+
+Common String Properties and Methods
+
+
+
+        */
+
+let a ="hello";
+let b = 'hello';
+let c = `hello`;
+
+// Length Property in String:
+// string.length
+// Returns the length of the string.
+//document.write(a.length);//5
+
+
+// Accessing Characters in String:
+// Using bracket notation: string[index]
+// Using charAt(index)
+
+//document.write(b[1]);
+//document.write(b.charAt(1));
+
+//----------------------------------------------------------------------------
+
+
+// Template Literals:
+// Multiline strings and string interpolation using backticks (`).
+// Embedding expressions: `${expression}`
+
+// let name = "DebugShala";
+// let str = `hello , ${name}`;
+// document.write(str); 
+
+
+
+// Note :- Template literal use bacticks instead of quotes to define a String.
+// we can insert variable directly in template literal . this is called as String interpolation.
+
+
+let fname = "Tarun";
+let company = "Mindnerves pvt ltd";
+//tarun is an employee of Mindnerves pvt ltd
+
+let sentence = `${fname} is an employee of ${company}`;
+//document.write(sentence);
+
+//Note :- With template literal u can use single quote and double quote both inside a String.
+let sentence1 = `My name "is" Tarun's'`;
+//document.write(sentence1);
+
+
+//---------------------------------------------------------------------------------------
+
+
+//Escape Sequence Character :- \'    \n    
+
+//let institute = 'DebugShala's';
+
+
+// if u trying to print the following string , javascript will misunderstand it.
+// let institute = 'DebugSahala Trainin's';
+// document.write(institute);
+
+// we can use single quote escape sequence to solve the problem.
+// let institute = 'DebugSahala Trainin\'s';
+// document.write(institute);
+
+// similarily we can use \" inside a string with double quotes.
+// let strDoubleQuotes = "This is a \"quoted\" word.";
+// document.write(strDoubleQuotes + "<br>"); // Output: This is a "quoted" word.
+
+        //other escape sequence characters are as follows:-
+        //  \n => newLine
+// let strNewLine = "This is the first line.\nThis is the second line.";
+// console.log(strNewLine); // This will print each part on a new line in the console
+                                            // This is the second line.
+
+//\t => tab
+// let strTab = "This is a tabbed \t space.";
+// console.log(strTab); // Output: This is a tabbed    space.
+
+
+    </script>
+</body>
+</html>
