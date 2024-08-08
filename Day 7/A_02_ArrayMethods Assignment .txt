@@ -1,0 +1,54 @@
+Common Array Methods
+
+1.
+Write a JavaScript function to check whether an `input` is an array or not.
+Test Data :
+console.log(is_array('w3resource'));
+console.log(is_array([1, 2, 4, 0]));
+false
+true
+
+2.
+Write a simple JavaScript program to join all elements of the following array into a string.
+Sample array : myColor = ["Red", "Green", "White", "Black"];
+Expected Output :
+"Red,Green,White,Black"
+"Red,Green,White,Black"
+"Red+Green+White+Black"
+
+3. 
+Write a JavaScript program to find the most frequent item in an array.
+Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+Sample Output : a ( 5 times )
+
+4.
+Write a JavaScript program that accepts a string as input and swaps the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
+
+5.
+Write a JavaScript program to compute the sum of an array of integers.(45,76,999,78,09)
+
+6. 
+Write a JavaScript program to compute the product of an array of integers.(2,3,4,5,6).
+
+7.
+Write a JavaScript program to find duplicate values in a JavaScript array.
+
+
+8.
+Using push():
+Create an array named fruits with the values ["Apple", "Banana"].
+Use the push method to add "Mango" to the end of the array.
+Print the updated array to the console.
+
+9.
+Using pop():
+Create an array named vegetables with the values ["Carrot", "Potato", "Tomato"].
+Use the pop method to remove the last element.
+Print the updated array to the console.
+
+10.
+Using shift():
+Create an array named cars with the values ["Toyota", "Honda", "BMW"].
+Use the shift method to remove the first element.
+Print the updated array to the console.
+Using unshift():

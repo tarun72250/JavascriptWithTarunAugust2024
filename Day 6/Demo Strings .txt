@@ -235,7 +235,7 @@ document.write(words); // Exercise 5
 
 Refrence :- 
 w3 String for methods of 
-Mdn docs for string methods
+Mdn methodName :- docs for string methods
 
 ------------------------------------------------------------------------------------------
 
