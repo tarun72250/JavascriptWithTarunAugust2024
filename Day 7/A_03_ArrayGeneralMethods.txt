@@ -1,0 +1,23 @@
+1.Array Searching and Indexing
+Given the array let num = [15, 25, 35, 25, 45, 25, 55];, find the index of the first occurrence of 25 and the last occurrence of 25. What will be the output if you search for 100 in the array?
+
+2. Array Slicing
+Given the array let numbers = [5, 10, 15, 20, 25, 30, 35];, use the slice method to create a new array containing elements from index 2 to 4. What happens to the original array?
+
+3. Cloning an Array
+Write a JavaScript function cloneArray that clones an array. Test it using cloneArray([1, 2, 3, 4]) and cloneArray([5, [6, 7], 8]).
+
+4. Array Concatenation
+Combine the arrays let fruits = ["apple", "banana"];, let moreFruits = ["cherry", "date"];, and let evenMoreFruits = ["elderberry", "fig"]; using the concat method. What will be the result?
+
+5. Sorting an Array Alphabetically
+Sort the array let words = ["banana", "apple", "cherry", "date"]; in alphabetical order using the sort method. What happens when you sort numbers like [5, 2, 10, 1] without a compare function?
+
+6. Sorting an Array Numerically
+Using the array let numbers = [100, 5, 50, 10];, sort it in ascending order using a compare function.
+
+7. Reversing an Array
+Reverse the array let colors = ["red", "green", "blue"]; using the reverse method. What will be the output?
+
+8. Deleting an Array Element
+Given the array let items = [10, 20, 30, 40, 50];, delete the element at index 2. What happens to the array length and the deleted index?
