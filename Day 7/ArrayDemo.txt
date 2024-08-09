@@ -100,69 +100,10 @@ document.write(fruits); // Output: apple,banana,orange
 
 
 --------------------------------------------------------------------------------------------------------------
-A_03_ArrayGeneralMethods :-
-
-1.
-concat() - Merges two or more arrays and returns a new array.
-Note :- these method does not modified the original array , means creating new array does not change in existing array.
-let fruits = ["apple", "banana"];
-let moreFruits = ["orange", "grape"];
-let allFruits = fruits.concat(moreFruits);
-document.write(allFruits); // Output: apple,banana,orange,grape
-
-2.
-sort() - Sorts the elements of an array in place and returns the sorted array.
-sort the array in aplhabetically order.
-Note :- these method modified the original array
-let num = [44,77,33,66,99,111,2222];
-num.sort();
-document.write(num); // 111,2222,33,44,66,77
-these is called as Natural ordering 
-
-if we want to arrange actual in ascending order  , so we will use like these.
-let compare = (a,b) =>{
-    return a-b;
-}
-
-let num = [44,77,33,66,99,111,2222];
-num.sort(compare);
-document.write(num);/33,44,66,77,99,111,2222
-
-3.
-reverse() - Reverses the order of the elements in an array in place.
-let fruits = ["apple", "banana", "orange"];
-fruits.reverse();
-document.write(fruits); // Output: orange,banana,apple
 
 
-4.
-splice() - Adds/removes items to/from an array, and returns the removed item(s).
-syntax :-
-array.splice(start, deleteCount, item1, item2, ...);
-Note :- these method modified the original array
 
-let fruits = ["apple", "banana", "orange"];
-fruits.splice(1, 1, "kiwi");
-document.write(fruits); // Output: apple,kiwi,orange
 
-let num = [10,40,70,20,80,30,90,50];
-num.splice(3,0,999);
-document.write(num); //10,40,70,999,20,80,30,90,50
-
-5.
-slice() - Returns a shallow copy of a portion of an array into a new array.
-Note :- these method will not modified the original array , these will create the new array.
-
-let fruits = ["apple", "banana", "orange"];
-let citrus = fruits.slice(1, 3);
-document.write(citrus); // Output: banana,orange
-
-Ques :- Write a JavaScript function to clone an array.
-array_Clone = function(arra1) {
- return arra1.slice(0);
-    };
-document.write(array_Clone([1, 2, 4, 0]));
-document.write(array_Clone([1, 2, [4, 0]]));
 
 
 --------------------------------------------------------------------------------------------------
@@ -185,31 +126,35 @@ numbers.forEach(function(number) {
     document.write(number + " "); // Output: 1 2 3 4 5
 });
 
-
 2.
-.from() :- 
-let name = "Tarun";
+Array.from() :- this method is used to create an array from any other object.
+let name = "Tarun";//Tarun is String object
 let arr = Array.from(name);
+console.log(arr);//check in console
 document.write(arr);//T,a,r,u,n
 
 
-
 3.
-for in :- We use these loop to acces object keys values
-for( let i in numbers)
-{
-    document.write(i+" index and their value :-"+numbers[i]+"</br>")//these will give arrays keys values 
-}
 
-
-4. 
 for of :- We use these loop to access object values directly
 for( let i of numbers)
 {
     document.write(i+"</br>")//these will give arrays values directly 
 }
 
-to be continued -----------------------------------------------------------------------------
+
+4. 
+for in :- We use these loop to acces object keys values
+
+let numbers = [11,22,5,77,99,33,44,88];
+for( let i in numbers)
+{
+    document.write(i+" index and their value :-"+numbers[i]+"</br>")//these will give arrays keys values 
+}
+
+---------------------------------------------------------------------------------------------------------
+
+
 
 map() - Creates a new array with the results of calling a provided function on every element.
 let numbers = [1, 2, 3, 4, 5];
