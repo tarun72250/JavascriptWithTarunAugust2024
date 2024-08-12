@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Need Callback in Array Functionality</title>
+  </head>
+  <body>
+    <script>
+      
+
+    //Array functionality needing callback 
+    //speacial fn available in array 
+    //needs arguements which itself is a function.
+    //this is called as callback function which is executed automatically./ not exlpicitely call
+    //sort the forEach loop , map , reduce , filter , every , some 
+
+    //1.Named Function
+    // //MyIter fn gets called automatically
+    // var nums = [10,20,30,40,50,60,70];
+    // //nums.forEach();//it passes a fn as an arguement which accept 3 arguement it is used for traversing the data 
+    // function myIter(value , index , arr)
+    // {
+    //     document.write("<p>"+value +" is present at "+index);
+    // }
+    // nums.forEach(myIter);//here myIter is fnName , which is gets called automatically for each and every elements in nums array .
+
+
+    //forEach() - Executes a provided function once for each array element.
+    // let numbers = [1, 2, 3, 4, 5];
+    // //we generally did like these 
+
+    // // for(let i =0 ; i<=numbers.length ; i++)
+    // // {
+    // //     document.write(i + " "); // Output: 1 2 3 4 5
+    // // }
+
+    // // //but now we use forEach() method
+    // numbers.forEach(function(number) {
+    //     document.write(number + " "); // Output: 1 2 3 4 5
+    // });
+
+    //here there are three ways to declared any function 
+    //1. Using Function Name 
+    //2. Anonymous Function 
+    //3. Arrow Function
+
+
+
+
+
+    //2. Anonymous fn
+    //Which is having have no name , not reausible
+    //can be used only for this function , where we write.
+    //function having no name 
+    //direct pass in nums.forEach();
+    // var nums = [10,20,30,40,50,60,70];
+    // // document.write("<ul>");
+      // nums.forEach(function(a,b){
+      //   document.write("<li>"+a+" "+b+"</li>" );
+      // })
+    // // document.write("</ul>");
+
+    // 3. Arrow function
+    // var nums = [10,20,30,40,50,60,70];
+    // document.write("<ul>");
+    //     nums.forEach((v)=>document.write("<li>"+v+"</li>"));
+    // document.write("</ul>");
+
+    //A. Array.from() :- this method is used to create an array from any other object.
+    // let name = "Hello from DebugShala";//Tarun is String object
+    //  let arr = Array.from(name);
+    // // console.log(arr);//check in console
+    //  document.write(arr);//H,e,l,l,o, ,f,r,o,m, ,D,e,b,u,g,S,h,a,l,a
+
+
+
+    // B. map() - Creates a new array with the results of calling a provided function on every element.
+    //map values always return array
+    // let numbers = [1, 2, 3, 4, 5];
+    // let squares = numbers.map(function(number) {
+    //     return number * number;
+    // });
+    // document.write(squares); // Output: 1,4,9,16,25
+
+    //shortcut for declaration using anonymous fn 
+    //  let squares1 = numbers.map(function(v){return v*v*v});//1,4,9,16,251
+    //  document.write(squares1)
+     //shortcut for declaration using arrow fn 
+    //  let squares2 = numbers.map( v => v*v*v );//1,8,27,64,125
+    //  document.write(squares2)
+    // shortcut for declaration using named fn
+    // function myConvert(v)
+    // {
+    //   return v * v * v * v;
+    // } 
+    //  let squares2 = numbers.map( myConvert);//1,16,81,256,625
+    // document.write(squares2)
+
+    //C. for of :- 
+    //shortcut for access array elements  
+    //We use these loop to access object values directly
+    // for( let i of numbers)
+    // {
+    //     document.write(i+"</br>")//these will give arrays values directly 
+    // }
+
+    // D. for in :- 
+    //We use these loop to access object keys values
+    // let numbers = [11,22,5,77,99,33,44,88];
+    // for( let i in numbers)
+    // {
+    //     document.write(i+" index and their value :-"+numbers[i]+"</br>")//these will give arrays keys values 
+    // }
+
+
+    //Note :- map , filter , reduce are higher order array methods ,too much time u reduced using these methods
+
+    //E. Reduce Fn in Array :- 
+    //array elements reduced to single value 
+    //let numbers = [10,20,30,40,50];
+    //let suppose we want to find the sum of all elements
+    // var sum = numbers.reduce(function( v , add)
+    //   {
+    //     return v+add;
+    //   });//150
+    //   document.write("Sum of all elemnts in array :-  ",sum);
+    //  if we want to ad 50 in ell elements sum
+      // var sum = numbers.reduce(function ( v , add)
+      // {
+      //   return v+add;
+      // },50);//200
+      // document.write("Sum of all elements in array :-  ",sum);
+    // shortcut
+    // let sum = numbers.reduce((v,a)=>v+a,100);//250
+    // document.write("Sum of all elements in array + 100:-  ",sum);
+
+    //F. Filter fn in Array :-
+    //these fn work on 1 value and return array
+    // let numbers = [10,20,39,49,50 , 78 , 987, 567];
+    // //      let filterarr =  numbers.filter(function(v) {
+    // //         return v%2 == 0;
+    // //       })
+    // //  document.write(filterarr);
+    // let filterarr1 = numbers.filter(v => v%2 == 0);
+    // document.write(filterarr1.toString());
+
+
+    //G. Every fn in Array
+    //this fn gets all elements return true or false
+    let numbers = [10,20,30,40,90];
+    // let alldivby3 = numbers.every(v =>v%3 ==0);
+    // document.write("</br> all div by 3 : "+alldivby3);//false
+
+    // //H. Some fn in Array
+    //this fn gets check some of elements are return true or false
+    let somedivby3 = numbers.some(v => v%3==0);
+    document.write("</br> some div by 3 : "+somedivby3);//true
+
+
+    
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+1. create an array of numbers and take input from user to add numbers to these array.
+2. Keep adding numbers to the array in 
+3. filter for numbers divisible by 10 from a given array.
+4. create an array of square of given numbers.
+5. use reduce to calculate factorial of a given number from an array of first n natural numbers (n being the number whose factorial need to be calculated).
+
+
+
+1.Finding an Index:
+Given an array let colors = ["red", "blue", "green", "yellow"];, write code to find the index of the element "green". What is the index, and what happens if you search for an element that doesn’t exist in the array?
+
+2.Last Occurrence:
+Given an array let numbers = [5, 12, 8, 130, 44, 130];, find the last occurrence of the number 130. What index is returned?
+Slicing Arrays
+
+3.Extracting a Portion:
+Given an array let fruits = ["apple", "banana", "orange", "grape", "mango"];, write code to extract a subarray containing "banana", "orange", and "grape". Print both the original and the new arrays.
+
+4.Cloning an Array:
+Write a function that takes an array as input and returns a clone (a shallow copy) of the array using the slice() method.
+
+5.Concatenating Arrays
+Merging Arrays:
+Given two arrays let firstArray = ["a", "b", "c"]; and let secondArray = [1, 2, 3];, write code to merge these arrays into one. Print the resulting array.
+
+6.Multiple Concatenations:
+Write code to concatenate three arrays: let arr1 = [10, 20];, let arr2 = [30, 40];, and let arr3 = [50, 60];. What is the resulting array?
+
+7.Sorting Arrays
+Alphabetical Sort:
+Given an array let words = ["apple", "Banana", "cherry", "date"];, write code to sort these words in alphabetical order. What is the sorted array?
+
+8.Numerical Sort (Ascending and Descending):
+Given an array let numbers = [4, 2, 5, 1, 3];, write code to sort this array in ascending and descending order. Print the array after each sort.
+Reversing Arrays
+
+9.Reverse an Array:
+Given an array let letters = ["A", "B", "C", "D"];, write code to reverse the array. Print both the original and the reversed arrays.
+
+10.Deleting Array Elements
+Deleting an Element:
+Given an array let animals = ["cat", "dog", "elephant", "giraffe"];, write code to delete the element "dog" using the delete keyword. What happens to the array after deletion?
+
+General Array Methods
+11.Combining Methods:
+Given an array let data = [1, 3, 5, 7, 9];, write code to reverse the array, then sort it in ascending order, and finally slice the first three elements to create a new array. Print all the steps and the final 
+array.
+
+12.Searching with Slice:
+Write code that uses the slice() method to find a subarray in a larger array and then uses the indexOf() method to find an element within that subarray. Given let array = [5, 10, 15, 20, 25, 30];, find the index of 20 within the slice [15, 20, 25].
+
+13.Using forEach:
+Question: Given an array of numbers, write a function that uses forEach to calculate the sum of all elements in the array.
+Challenge: Modify the function to also find the product of all elements in the array.
+
+14. Using map:
+Question: Write a function that takes an array of integers and returns a new array where each element is squared.
+Challenge: Modify the function to return a new array where each element is squared only if it is even.
+
+15. Using filter:
+Question: Write a function that filters out all the odd numbers from an array.
+Challenge: Modify the function to filter out all numbers greater than a certain value provided as a parameter.
+
+16. Using reduce:
+Question: Write a function that uses reduce to find the maximum number in an array.
+Challenge: Modify the function to find both the maximum and minimum numbers in the array using a single reduce call.
+
+17. Using every:
+Question: Write a function that checks if all elements in an array are positive numbers.
+Challenge: Modify the function to check if all elements are multiples of a given number.
+
+18. Using some:
+Question: Write a function that checks if there is at least one negative number in an array.
+Challenge: Modify the function to check if there is at least one number divisible by a given number.
+
+19. Combining Methods:
+Question: Given an array of numbers, write a function that first filters out all numbers less than 10, then squares the remaining numbers, and finally returns the sum of these squared numbers.
+Challenge: Modify the function to return the product of these squared numbers instead of the sum.
+
+20. Array Manipulation:
+Question: Write a function that takes an array and returns a new array with all elements multiplied by 5. Use map for this.
+Challenge: Modify the function to first filter out any elements less than 10 before multiplying by 5.
