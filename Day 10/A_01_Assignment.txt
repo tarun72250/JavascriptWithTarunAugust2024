@@ -1,0 +1,46 @@
+1 Write a program using prompt function to take input of age as a value from the user and use alert to tell him if he can drive or not.
+
+2. In Q1 use confirm to ask the user if he wants to see the prompt again.
+
+3. In the previous question, use console.error to log the error if the age entered is negative.
+
+4. Write a program to change the URL to google.com (Redirection') if user enters a number greates than 4.
+
+5 Change the background of the page to yellow , red or any other Color input through prompt.
+
+6.Detect browser used by client and its versions.
+
+7. Check weather cookies are enabled or disabled on the client's browser.
+
+8. Find the screen.availWidth and screen.availHeight property and print in console.
+
+9. Write a function that takes two arguments: a message and a boolean value. If the boolean value is true, the function should log the message to the console using console.log. If the value is false, the function should log nothing.
+
+10. Create a function that takes two pieces of code as arguments (functions or code blocks). The function should:
+
+Use console.time to start timing the execution of the first piece of code.
+Execute the first piece of code.
+Use console.timeEnd to stop timing and log the elapsed time.
+Repeat the same process for the second piece of code.
+Log a message comparing the execution times of both pieces of code.
+
+11. Write a function that takes an object as an argument. The function should use console.table to display the object's properties and values in a tabular format.
+
+12. Create a function that takes two arguments: a value and an expected outcome (another value or a condition). The function should use console.assert to check if the value matches the expected outcome. If there's a mismatch, log an error message using console.error.
+
+13. Write a program that prompts the user for a message to log. Use console.log to display the entered message. Additionally, add an option for the user to choose between logging information, warnings, or errors. Use console.info, console.warn, or console.error based on the user's selection.
+
+14. Create a function that takes an array of objects as an argument. The function should use console.table to display the data from the array in a tabular format. Each object in the array should represent a row in the table. You can define the structure of the objects within the function.
+
+15. Compare the performance of different loop types (for, while, do-while) when iterating over a large array.
+
+16. Compare the performance of using forEach, map, and a traditional for loop to iterate over an array and perform a simple operation on each element.
+
+17. Write a function that takes a background color as an argument. Use the window.document.body.style.background property to dynamically change the background color of the webpage based on the input argument.
+
+18. Create a function that checks the current URL using window.location.href. If the URL contains a specific keyword (e.g., "debug"), display a confirmation dialog with window.confirm asking if the user wants to navigate to a different page. If confirmed, redirect the user using window.location.href.
+
+19. Develop a program that utilizes window.innerWidth and window.innerHeight to determine the size of the browser window. Based on the size, display a message indicating whether it's a mobile, tablet, or desktop view.
+
+20. Implement a function that opens a new tab using window.open. Set the window size and specify a title for the new tab. Optionally, you can pre-load some content in the new tab using the window.document.write method (consider security implications).
+

@@ -1,0 +1,16 @@
+1. Create amazon or netflix clone using html or css.
+2. The Tribute Website 
+3. Job Application Website
+4. Parallex Website 
+5. Developer's Landing Page
+6. Resturant Website 
+7. Hospital Management Website
+8. Wynk music app Website
+9. Youtube clone 
+10. Clone of w3website of Javascript
+
+Additional Task :- 
+1. Explore git and github and make setupr for these things.
+2. Explore vercel and Netlify for free hosting of your static pages 
+3. How to make any website responsive 
+4. How I edit and download images for Website | Stock Images For Free.

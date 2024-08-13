@@ -80,3 +80,10 @@ Challenge: Modify the function to return the product of these squared numbers in
 20. Array Manipulation:
 Question: Write a function that takes an array and returns a new array with all elements multiplied by 5. Use map for this.
 Challenge: Modify the function to first filter out any elements less than 10 before multiplying by 5.
+
+Task for core javascript project :- 
+Write a js program to generate a random number and store it in a variable . 
+The program then takes an input from the user to tell them weather the guess was correct , greater or lesser than the original number.
+100-(no of guesses) is the score of the user . The program is expected to terminate once the number is guessed.
+Number should be between 1-100.
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Objects in js </title>
+</head>
+<body>
+    
+
+<script>
+
+        //Console Object in js
+        // The console object has several methods , log being one of thm , some of them are as follows.
+
+        // assert() -> used to assert a condition.
+        // clear()  -> clears the console.
+        // log()    -> Outputs a message to the console.
+        // table()  -> Display a tabular data
+        // warn()   -> used for warnings.
+        // error()  -> used for errors
+        // info()   -> used for specail information
+
+        console.log("Hello From DebugShala...")  // printing in console
+        console.error("this line is an from error")   // shows red line in console  means error
+        console.assert(5>53); //A-02_ConsoleObjects.html:14 Assertion failed: console.assert
+        // showing an assertion if u written true statement these will normally printed that value 
+        // if your assertion is failed these through me error message
+
+         //console.clear();//console was clear using these method
+
+         employee ={name :"Pranshu " , designation :" Js Developer" , profile:" Associate engineer"}
+         console.table(employee);
+
+
+         console.warn("This is simple warning");
+
+         console.info("Hello from info message");
+         console.log("Both are print in information block")
+
+         //console.time(); imp method 
+
+         //Ques :- compare the for loop and while loop timeing
+
+         console.time("a");
+         for(let i =0 ; i <5 ; i++)
+         {
+            console.log("inside for loop");
+         }
+         console.timeEnd("a");
+         
+
+         console.time("a");
+        let i = 0 ;
+        while(i < 5){
+            console.log("Inside while loop");
+            i++;
+        }
+         console.timeEnd("a");
+
+</script>
+</body>
+</html>

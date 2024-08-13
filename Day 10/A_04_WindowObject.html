@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Objects in js </title>
+</head>
+<body>
+    
+  <script>
+            
+        // Window object represents browser window and provides methods to control it , It is a global object.
+
+        // The window object in JavaScript is the global object representing the browser window or tab that contains a webpage. It's the top-level object in the browser's hierarchy and provides a vast range of properties, methods, and events to interact with and control the browser environment.
+
+        // Document Object Model (Dom);
+        // Dom represents the page content as HTML.
+
+        // document.body  => page body as Js Object
+
+        // document.body.style.background ="red";
+
+        //Window.document
+        //Window.console
+        //Window.alert()
+        //
+        //document
+        //console
+        //alert() , prompt()
+
+        // ---------------------------------
+        // Browser Object Model (Bom);
+
+        // The Browser Object Model (Bom) represent additional objects provided by the browser (host environment) for working with everything except the document part of the BOM.
+
+        // The functions alert / confirm / prompt are also a part of the Bom.
+
+        // check in console
+
+        // location.href = "https://www.google.com/"
+
+
+                
+        // --------------------------------
+
+        // 1. Properties/state of the window Object
+
+                
+        // window.document: Refers to the document object, which represents the content of the webpage (DOM).
+        // console.log(window.document.title); // Logs the title of the current document
+
+        // window.location: Provides information about the current URL and allows you to redirect to a different page.
+        // console.log(window.location.href); // Logs the current URL
+        // window.location.href = "https://www.example.com"; // Redirects to another URL
+
+        // window.navigator: Provides information about the browser, like the user agent, platform, and language.
+        // console.log(window.navigator.userAgent); // Logs the user agent string
+
+        // // window.history: Provides methods to interact with the browser's history (navigate back, forward, etc.).
+        // window.history.back(); // Goes back to the previous page in history
+
+        // // window.innerWidth and window.innerHeight: Returns the width and height of the window's content area (viewport).
+        // console.log(window.innerWidth); // Logs the width of the window's content area
+
+        // // window.screen: Provides information about the user's screen, like the width and height of the screen.
+        // console.log(window.screen.width); // Logs the width of the user's screen
+
+
+
+        // ------------------------------------
+
+        // 2. Methods of the window Object
+        // The window object includes many methods to perform actions like displaying dialog boxes, opening new windows, and more.
+
+        // window.alert(): Displays an alert dialog box with a specified message.
+        // window.alert("This is an alert box!");
+
+        // window.prompt(): Displays a prompt dialog box that asks the user for input.
+        // let userInput = window.prompt("Please enter your name:");
+
+        // window.confirm(): Displays a confirm dialog box that asks the user to confirm an action.
+        // let isConfirmed = window.confirm("Are you sure?");
+
+        // window.open(): Opens a new browser window or tab with a specified URL.
+        // window.open(URL , Target name , window_specification(height , width))
+        // window.open("https://www.example.com", "_blank"); // Opens in a new tab
+
+        // window.close(): Closes the current browser window (usually only works on windows opened via window.open()).
+        // window.close(); // Closes the current window
+
+        //--------------------------------------
+
+        // 3. Global Variables and Functions
+        // Any global variable or function declared in your script is actually a property of the window object.
+
+        var myGlobalVar = 42;
+        console.log(myGlobalVar); // 42
+
+        function myGlobalFunction() {
+        console.log("Hello, world!");
+        }
+        myGlobalFunction(); // "Hello, world!"
+        </script>
+
+
+
+</body>
+</html>

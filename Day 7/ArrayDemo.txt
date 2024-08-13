@@ -1,47 +1,4 @@
-
-4.
-filter() - Creates a new array with all elements that pass the test implemented by the provided function.
-let numbers = [1, 2, 3, 4, 5];
-let evenNumbers = numbers.filter(function(number) {
-    return number % 2 === 0;
-});
-
-document.write(evenNumbers); // Output: 2,4
-
-5.
-reduce() - Executes a reducer function on each element of the array, resulting in a single output value.
-let numbers = [1, 2, 3, 4, 5];
-let sum = numbers.reduce(function(total, number) {
-    return total + number;
-}, 0);
-document.write(sum); // Output: 15
-
-
-
-Ques :- One way to loop through an array, is using a for loop:
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-let fLen = fruits.length;
-
-let text = "<ul>";
-for (let i = 0; i < fLen; i++) {
-  text += "<li>" + fruits[i] + "</li>";
-}
-text += "</ul>";
-document.write(text);
-
-
-Ques :- You can also use the Array.forEach() function:
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-let text = "<ul>";
-fruits.forEach(myFunction);
-text += "</ul>";
-
-function myFunction(value) {
-  text += "<li>" + value + "</li>";
-}
---------------------------------------------------------------------------------------------------------------
-
+Additional Questions for practise of array functionalities.
 
 1.
 find() - Returns the value of the first element that passes a test.
@@ -50,6 +7,7 @@ let found = numbers.find(function(number) {
     return number > 3;
 });
 document.write(found); // Output: 4
+=-------------------------------------------------------------------------------------------------------------
 
 2.
 findIndex() - Returns the index of the first element that passes a test.
@@ -58,35 +16,19 @@ let index = numbers.findIndex(function(number) {
     return number > 3;
 });
 document.write(index); // Output: 3
+=-------------------------------------------------------------------------------------------------------------
 
 3.
 includes() - Determines whether an array includes a certain value.
 let fruits = ["apple", "banana", "orange"];
 document.write(fruits.includes("banana")); // Output: true
 
-4.
-some() - Tests whether at least one element in the array passes the test implemented by the provided function.
-let numbers = [1, 2, 3, 4, 5];
-let hasEven = numbers.some(function(number) {
-    return number % 2 === 0;
-});
-document.write(hasEven); // Output: true
 
-5.
-every() - Tests whether all elements in the array pass the test implemented by the provided function.
-let numbers = [1, 2, 3, 4, 5];
-let allEven = numbers.every(function(number) {
-    return number % 2 === 0;
-});
-document.write(allEven); // Output: false
-
-
-6.
 
 =-------------------------------------------------------------------------------------------------------------
 
 Practical Examples:- 
-
+4.
 Example 1: Finding the maximum number in an array
 let numbers = [1, 2, 3, 4, 5];
 let max = numbers.reduce(function(a, b) {
@@ -95,6 +37,8 @@ let max = numbers.reduce(function(a, b) {
 document.write(max); // Output: 5
 
 --------------------------------------------------------------------------------------------------------------
+
+5.
 Example 2: Removing duplicates from an array
 
 let numbers = [1, 2, 3, 4, 5, 1, 2, 3];
@@ -102,6 +46,8 @@ let uniqueNumbers = [...new Set(numbers)];
 document.write(uniqueNumbers); // Output: 1,2,3,4,5
 
 --------------------------------------------------------------------------------------------------------------
+
+6.
 Example 3: Flattening a nested array
 
 let nestedArray = [1, [2, 3], [4, [5, 6]]];
