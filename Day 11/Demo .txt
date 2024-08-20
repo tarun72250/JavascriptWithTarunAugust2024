@@ -1,0 +1,15 @@
+HTML DOM :- Document Object Model
+DOM :- Collection of ReadyMade Code.
+DOM :- Parent , child and sibling relationship.
+
+which allow to modify style , content or structure of HTML page , dynamically (run-time-occurence of any event)
+
+Ex:-
+img displayed in bigger size on mouse over event.
+selecting some radio button which will display some div on the page .
+modifying style - on focus event background color of form feild gets changed.
+after click of button , button gets disabled.
+
+DOM :- Its based on node tree which is created for HTML document.
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Global Functions in js</title>
+  </head>
+  <body>
+    <script>
+      // //parseInt()
+      // document.write("10" + "</br>");//10
+      // document.write(typeof "10" + "</br>");//string
+      // document.write(typeof parseInt("10") + "</br>");//number
+
+      // document.write(parseInt() + "</br>"); //NAN
+      // document.write(parseInt("10") + "</br>"); //10
+      // document.write(parseInt("10.23") + "</br>"); //10
+      // document.write(parseInt("45 56 37") + "</br>"); //45
+      // document.write(parseInt("28 hello") + "</br>"); //28
+      // document.write(parseInt("hello 28") + "</br>"); //NAN
+      // document.write(parseInt("  50  ") + "</br>"); //50
+
+      // //parseFloat()
+      // document.write(parseFloat() + "</br>"); //NAN
+      // document.write(parseFloat(" 10 ") + "</br>"); //10
+      // document.write(parseFloat("     ") + "</br>"); //NAN
+      // document.write(parseFloat("12.45") + "</br>"); //12.45
+      // document.write(parseFloat("  122.56 56,87 78,98   ") + "</br>"); //122.56
+      // document.write(parseFloat(12345) + "</br>"); //12345
+      // document.write(parseFloat("12.45 hello     ") + "</br>"); //12.45
+      // document.write(parseFloat(" hello  12.45") + "</br>"); //NaN
+
+
+      // let a ;
+      // document.write(a+ "</br>");//undefined
+      // let b = null;
+      // document.write(b+ "</br>");//null
+
+      // //String():- convert objects value into string
+      // document.write(String() + "</br>"); //undefined
+      // document.write(String(new Date("2024,1,24")) + "</br>"); //Wed Jan 24 2024 00:00:00 GMT+0530 (India Standard Time)
+      // // document.write(String(new Date(2024,1,24)) + "</br>");//Sat Feb 24 2024 00:00:00 GMT+0530 (India Standard Time)
+      // document.write(String(123+45) + "</br>"); //168
+      // document.write(String("12345") + "</br>"); //undefined
+      // document.write(String(true) + "</br>"); //true
+
+      // //Number() :- convert objects value into number
+      // document.write(Number() + "</br>"); //0
+      // document.write(Number(true) + "</br>"); //1
+      // document.write(Number(false) + "</br>"); //0
+      // document.write(Number(new Date()) + "</br>"); //miliseconds 1723640108808 since January 1, 1970 00:00:00.
+
+      // //decodeURI()   decodes a URI
+      // let uri = "my test.asp?name=ståle&car=saab";
+      // let encoded = encodeURI(uri);
+      // document.write("Encoded URI :- "+encoded + "</br>");//my%20test.asp?name=st%C3%A5le&car=saab
+      // let decoded = decodeURI(encoded);
+      // document.write("Decoded URI :- "+decoded);//my test.asp?name=ståle&car=saab
+
+      //Special Characters
+      //The encodeURI() method does not encode characters like:
+      //, / ? : @ & = + $ * #
+    </script>
+  </body>
+</html>

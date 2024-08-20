@@ -1,11 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date objects in js</title>
-</head>
-<body>
+<html>
+    <head>
+      <title>Date class in js</title>
+    </head>
+    <script>
+        
+
+     //Introduction to Date :- 
+     //JavaScript Date objects represent a single moment in time in a platform-independent format. 
+     //Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
+     //We can use it to store creation/modification times, to measure time, or just to print out the current date.
+
+
+    //Creating Date :- 
+    // To create a new Date object call new Date() with one of the following arguments:
+    // 1. new Date() Without arguments - create a Date object for the current date and time:
+    // let now = new Date();
+    // alert(now); // shows current date/time
+
+    // 2. new Date(milliseconds)
+    // Create a Date object with the time equal to number of milliseconds (1/1000 of a second) passed after the Jan 1st of 1970 UTC+0.
+    // 0 means 01.01.1970 UTC+0
+    // let Jan01_1970 = new Date(0);
+    // document.write(Jan01_1970);
+    // now add 24 hours, get 02.01.1970 UTC+0
+    //  let Jan02_1970 = new Date(24*3600 * 1000); 
+    //  alert(Jan02_1970);
     
-</body>
+    // 3. new Date(datestring)
+    // If there is a single argument, and it's a string, then it is parsed automatically. The algorithm is the same as Date.parse uses, we'll cover it later.
+    // let date = new Date("2024-08-14");
+    // document.write(date);
+
+     //current date and time
+    //  let cdate = new Date();
+    //  document.write(cdate);
+
+    //  4. new Date(year, month, date, hours, minutes, seconds, ms)
+    // Create the date with the given components in the local time zone. Only the first two arguments are obligatory.
+    // The year must have 4 digits: 2013 is okay, 98 is not.
+    // The month count starts with 0 (Jan), up to 11 (Dec).
+    // The date parameter is actually the day of month, if absent then 1 is assumed.
+    // If hours/minutes/seconds/ms is absent, they are assumed to be equal.
+    //new Date(2024, 0, 1, 0, 0, 0, 0); // 1 Jan 2024, 00:00:00
+    // let date = new Date(2024, 0, 1, 2, 3, 4, 567);
+    // document.write(date);
+
+    // 5. Using Date.now()
+    // Returns the numeric value corresponding to the current time- the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.
+    // let now = new Date()
+    // document.write(now+"</br>");//current date / time
+    // document.write(Date.now());//milliSeconds
+    // Sat Jan 09 2021 22:06:33 GMT+0100
+
+    //   Access Date Components
+    //   For Getting specific Date components
+      //let cdate = new Date();
+      // document.write("</br>"+cdate.getDate()+"</br>");//14
+      // document.write("</br>"+cdate.getDay()+"</br>");//3
+      // document.write("</br>"+cdate.getMonth()+"</br>");//7
+      // document.write("</br>"+cdate.getFullYear()+"</br>");//2024
+      // document.write("</br>"+cdate.getHours()+"</br>");//17
+      // document.write("</br>"+cdate.getMinutes()+"</br>");//51
+      // document.write("</br>"+cdate.getSeconds()+"</br>");//12
+      // document.write("</br>"+cdate.getTime()+"</br>");//1723638076698
+      
+    //   Modifying Date components
+    //   //For Setting specific Date components
+    //  cdate.setDate(4);//set date/time (1-31)
+    //   document.write("</br>"+cdate+"</br>");
+    //  cdate.setFullYear(2024);//optionally month and day
+    //   document.write("</br>"+cdate+"</br>");
+    //   cdate.setHours(22);//set hours (0-23)
+    //   document.write("</br>"+cdate+"</br>");
+    //   cdate.setMilliseconds(999);//set milliseconds (0-999)
+    //   document.write("</br>"+cdate+"</br>");
+    //  cdate.setMinutes(59);//set minutes (0-59)
+    //   document.write("</br>"+cdate+"</br>");
+    //   cdate.setMonth(11);//set month 0-11
+    //   document.write("</br>"+cdate+"</br>");
+    //   cdate.setSeconds(59);//set seconds (0-59)
+    //   document.write("</br>"+cdate+"</br>");
+    //   cdate.setTime(2000);//set the time (milliseconds since janueay 1 , 1970)
+    //   document.write("</br>"+cdate+"</br>");
+
+
+    // Date Methods :- 
+
+    // Parsing date
+    // The call to Date.parse(str) parses the string in the given format and returns the timestamp (number  of milliseconds from 1 Jan 1970 UTC+0). If the format is invalid, returns NaN.
+
+    // The string format should be: YYYY-MM-DDTHH:mm:ss.sssZ
+
+    // Compare dates - We can use comparison operators like < and > two compare two Date objects, and under the hood, their time counters are effectively compared. 
+
+    // Another way to compare two dates is by using the built-in getTime() method.
+
+        //Note :Equality operators (== and ===) don't work with Date objects, so we don't explicitely check if they're the same.
+
+        //Date format will be 
+        //Year month day Hours Minutes Seconds
+      
+      
+      // let cdate1 = new Date("2022-3-16")
+      // document.write("</br>"+cdate1);
+
+      // let cdate2 = new Date("October 13 , 2022 11:13:00");
+      // document.write("</br>"+cdate2);
+
+
+    //   //Year month day Hours Minutes Seconds
+      // let cdate3 = new Date(2024, 16, 14, 10,33,22,0);
+      // document.write("</br>"+cdate3);
+     
+    //   //Note : Js counts start from months 0-11
+
+    //   //Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
+
+
+    //   let cdate4 = new Date(2024,13);
+    //   document.write("</br>"+cdate4);
+     
+
+    //   //Js stores Date as miliseconds
+    //   //January 01, 1970.
+    //   //One day (24 hours) is 86 400 000 milliseconds.
+      const d = new Date(86400000);
+      // document.write("</br>"+d);
+
+      // const d1 = new Date(24 * 60 * 60 * 1000);//86 400 000 milliseconds
+      // document.write("</br>"+d1);
+
+    //   const d3 = new Date(0);
+    //   document.write("</br>"+d3);
+
+    //   //Date methods()
+      document.write("</br>"+d.toString());
+      document.write("</br>"+d.toDateString());
+      document.write("</br>"+d.toUTCString());
+
+
+
+    </script>
+    </body>
 </html>
