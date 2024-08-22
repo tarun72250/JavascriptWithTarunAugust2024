@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression in JS</title>
+</head>
+<body>
+    
+
+    <script>
+//Regular expression
+// Regular expressions in JavaScript are sequences of characters used to create patterns. 
+// These matching patterns are then tested against a combination of characters in a string. 
+// For example, regex patterns can be used to check strings like emails or passwords to determine if their character combinations match the regex patterns defined. 
+
+
+
+        // var re = /ab/i;
+        // var str = "welcome";//false
+        // // var str = "welabcome";//true
+        // document.write(re.test(str));
+
+        
+
+        // var re = /[ab]*/i;//true  :-because ZERO or MORE occurences
+        // var re = /[ab]/i;//false
+        // var str = "welcome";
+        // document.write(re.test(str));
+        
+
+        // var re = /^ab/i;
+        // var str = "abwelcabome";//true
+        // var re = /^ab$/i;
+        // var str = "abwelcabomeab";//false
+        // var re = /ab$/i;
+        // var str = "welcabomeab";//true
+        // var str = "welcome";//false
+        // document.write(re.test(str));
+        
+
+        //product code - P01
+        //var re = /^P\d\d$/;
+        // var str = "p10";//false
+        //  var re = /^P\d\d$/i;//true
+        //  var str = "p10";//true
+        // var str = "P12";//true
+        // var str = "P01ksjk";//false
+        //var str = "P01 ";//false
+        //document.write(re.test(str));
+
+        //pattern for first name
+        //var re = /^[A-Z]{1}[a-z]{1,10}$/
+        // var str = "Tarun";
+        // var str = "TAarun";
+        // var str = "Tarun87678";//false
+        // var str = "Tarun ";//false
+        // document.write(re.test(str)); 
+
+        //pattern for full name - Tarun Rathore 
+        // var re = /^[A-Z]{1}[a-z]{1,10}\s[A-Z]{1}[a-z]{3,10}$/
+        // var str = "Tarun Rathore";
+        // var str = "Tarun Rathore ";// false due to space
+        //var str = "Tarun RatHore";//false due to uppercase in med letter
+        // document.write(re.test(str));
+        
+
+        //pattern for uid - 8,12 - alphabets, digits ,underscore ,dot, hyphen
+        // var re = /^[\w.-]{8,12}$///[\w.-]: Matches any word character (\w includes letters, digits, and underscores), or a dot (.), or a hyphen (-).
+        // var str = "a1234_Josh";//true
+        // var str = "B1234#Josh";//false
+        
+        // document.write(re.test(str)); 
+
+        //pattern for mobile - 10 digit number
+        // var re = /^[\d]{10}$/
+        // var str = "afgasdfg";
+        // document.write(re.test(str));
+        // document.write("<br/>***********")
+        
+
+        //pattern for emailid - ___@gmail.com
+        /*var re = /^[\w.#-]{5,}@gmail.com$/
+        var str = "bakul_joshi@object.com";
+        document.write(re.test(str));
+        */
+
+
+        //pattern for emailid - ___@___.__
+        /*var re = /^[\w.#-]{5,}@[\w]{3,12}\.[a-z]{2,3}$/
+        var str = "bakul&joshi@gmail.com";
+        document.write(re.test(str));
+        */
+
+        //pattern for m/f
+        /*var re = /^(m|f)$/
+        var str = "ffghfg";
+        document.write(re.test(str));
+        */
+
+        //pattern for date
+        // var re = /^\d{4}-\d{2}-\d{2}$/
+        // var str = "2000-12-12";
+        // document.write(re.test(str));
+    </script>
+</body>
+</html>

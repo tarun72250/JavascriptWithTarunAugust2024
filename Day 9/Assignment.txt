@@ -1,0 +1,60 @@
+1. Validate if a String Contains "ab"
+Prompt: Enter a string to check if it contains "ab" (case-insensitive).
+Expected Output: Displays true if "ab" is found, otherwise false.
+
+2. Check for Specific Product Code Format
+Prompt: Enter a product code in the format "P" followed by two digits (e.g., P01, P99).
+Expected Output: Displays true if the format is correct, otherwise false.
+
+3. Validate a Name Format (First Name Only)
+Prompt: Enter a first name (should start with an uppercase letter followed by 1-10 lowercase letters).
+Expected Output: Displays true if the name is in the correct format, otherwise false.
+
+4. Validate Full Name (First Name and Last Name)
+Prompt: Enter your full name (First and Last name should start with an uppercase letter).
+Expected Output: Displays true if the format is correct (e.g., "Tarun Rathore"), otherwise false.
+
+5. Validate a UID (Alphabets, Digits, Underscore, Dot, Hyphen)
+Prompt: Enter a UID (8-12 characters including letters, digits, underscores, dots, hyphens).
+Expected Output: Displays true if the UID is valid, otherwise false.
+
+6. Validate a Mobile Number (10 Digits)
+Prompt: Enter a 10-digit mobile number.
+Expected Output: Displays true if the input is a valid 10-digit number, otherwise false.
+
+7. Validate an Email Address (Basic Pattern)
+Prompt: Enter an email address in the format username@gmail.com.
+Expected Output: Displays true if the email is valid, otherwise false.
+
+8. Validate a Gender Input (m/f)
+Prompt: Enter "m" or "f" for gender.
+Expected Output: Displays true if the input is either "m" or "f", otherwise false.
+
+9. Validate a Date in YYYY-MM-DD Format
+Prompt: Enter a date in the format YYYY-MM-DD.
+Expected Output: Displays true if the date is in the correct format, otherwise false.
+
+10. Validate a Postal Code (6-Digit Numeric Code)
+Prompt: Enter a 6-digit postal code.
+Expected Output: Displays true if the input is a valid 6-digit number, otherwise false.
+
+11.  Validate a Username (Starts with a Letter and Can Include Numbers)
+Prompt: Enter a username that starts with a letter and is 5-15 characters long, including letters and digits.
+Expected Output: Displays true if the username meets the criteria, otherwise false.
+
+12. Validate a Password (At Least One Uppercase, One Lowercase, and One Digit)
+Prompt: Enter a password that must be 8-15 characters long and include at least one uppercase letter, one lowercase letter, and one digit.
+Expected Output: Displays true if the password is valid, otherwise false.
+
+13. Validate a Vehicle Number Plate (Format: Two Letters Followed by Four Digits)
+Prompt: Enter a vehicle number plate in the format "AA1234".
+Expected Output: Displays true if the number plate matches the format, otherwise false.
+
+14. Validate a Time Format (24-Hour Clock)
+Prompt: Enter a time in the format HH
+(24-hour format).
+Expected Output: Displays true if the time is in the correct format, otherwise false.
+
+15. Validate a Hexadecimal Color Code
+Prompt: Enter a color code in the format "#RRGGBB".
+Expected Output: Displays true if the input is a valid hexadecimal color code, otherwise false.

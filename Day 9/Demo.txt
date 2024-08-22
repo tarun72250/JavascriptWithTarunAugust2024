@@ -1,1 +1,169 @@
 Regular expression
+Regular expressions in JavaScript are sequences of characters used to create patterns. 
+These matching patterns are then tested against a combination of characters in a string. 
+For example, regex patterns can be used to check strings like emails or passwords to determine if their character combinations match the regex patterns defined. 
+
+
+//URL :- https://regexr.com/
+
+//Url :- https://dev.to/itzz_okure/how-to-validate-a-simple-form-using-regular-expressionsregex-in-javascript-1fp8
+
+
+
+Character classes
+.	any character except newline   :- .an , 
+\w\d\s	word, digit, whitespace   :- 
+\W\D\S	not word, digit, whitespace
+[abc]	any of a, b, or c      :- \d[a-e]an
+[^abc]	not a, b, or c        :- \d[^a-e]an
+[a-g]	character between a & g
+
+\dan (7arry)  , 
+\d[m]han (5mhan)
+
+//character in a-e
+\d[a-e]han (7dhan 2ahan 4ehan )
+
+//not of a-e character 
+\d[^a-e]han (7ihan)
+
+//not in abcde character
+\d[^abcde]han (7fhan)
+
+
+---------------------------------------------------
+Anchors
+^abc$	start / end of the string
+\b\B	word, not-word boundary
+
+^a (only matches if we started string at a) check if multiline flag is disabled
+or if we try it start second line with a (then enable multiline flag)
+
+
+
+---------------------------------------------------
+Escaped characters
+\.\*\\	escaped special characters
+\t\n\r	tab, linefeed, carriage return
+
+a\. (chooses a. in any of line)
+
+aa\* (aa*)
+
+a\\ (a\)
+
+\t  (tab )
+
+
+
+---------------------------------------------------
+agr mjhe grouping krni h to me () paranthesis k use krta hu 
+
+Groups & Lookaround
+(abc)	capture group
+/(abc)/g    (abc , abcabc) 0 or more abc are match
+
+else other are not useful
+
+
+---------------------------------------------------
+Quantifiers & Alternation
+a*a+a?	0 or more, 1 or more, 0 or 1
+
+a*  (0 or more occurences)
+a+  (1 or more occurences)
+a?  (0 or 1 ocurences)
+
+-------------
+a{5}a{2,}	exactly five, two or more
+
+if mjhe check krna h ram 2 times likha hoga 
+(ram){2}  (ramram)
+(abc){3}  (bcabcabc)
+(Abcabcabc krduga to ye mtach nhi krega)
+(lekin me case insensitive flag ko on krdu to work krega ye )
+
+(abc){3,}  (Abcabcabcabcabc)
+(abc){3,5} (Abcabcabcabcabc) only 3-5 occurences match hogi
+ab|cd     (ab   cd check krega )
+
+
+
+
+a{1,3}	between one & three
+a+?a{2,}?	match as few as possible
+ab|cd	match ab or cd
+
+
+
+
+--------------------------------------------------------------
+
+let create one html file and do regular expression for that 
+
+
+ /*var re = /ab/i;
+        var str = "welabcome";
+        document.write(re.test(str));
+        */
+
+        //var re = /[ab]*/i;
+        /*var str = "welcome";
+        document.write(re.test(str));
+        */
+
+        /*var re = /^ab/i;
+        var str = "abwelabcome";
+        document.write(re.test(str));
+        */
+
+        //product code - P01
+        /*var re = /^P\d\d$/
+        var str = "P01ksjk";
+        document.write(re.test(str));*/
+
+        //pattern for first name
+        /*var re = /^[A-Z]{1}[a-z]{1,10}$/
+        var str = "Bakul87678";
+        document.write(re.test(str)); */
+
+        //pattern for full name - Bakul Joshi 
+        /*var re = /^[A-Z]{1}[a-z]{1,10}\s[A-Z]{1}[a-z]{3,}$/
+        var str = "Bakul Josh";
+        document.write(re.test(str));
+        */
+
+        //pattern for uid - 8,12 - alphabets, digits ,underscore ,dot, hyphen
+        /*var re = /^[\w.-]{8,12}$/
+        var str = "B1234#Josh";
+        document.write(re.test(str)); */
+
+        //pattern for mobile - 10 digit number
+        /*var re = /^[\d]{10}$/
+        var str = "12345i7890";
+        document.write(re.test(str));
+        document.write("<br/>***********")
+        */
+
+        //pattern for emailid - ___@gmail.com
+        /*var re = /^[\w.#-]{5,}@gmail.com$/
+        var str = "bakul_joshi@object.com";
+        document.write(re.test(str));
+        */
+        //pattern for emailid - ___@___.__
+        /*var re = /^[\w.#-]{5,}@[\w]{3,12}\.[a-z]{2,3}$/
+        var str = "bakul&joshi@gmail.com";
+        document.write(re.test(str));
+        */
+
+        //pattern for m/f
+        /*var re = /^(m|f)$/
+        var str = "ffghfg";
+        document.write(re.test(str));
+        */
+
+        //pattern for date
+        // var re = /^\d{4}-\d{2}-\d{2}$/
+        // var str = "2000-12-12";
+        // document.write(re.test(str));
+        -----------------------------------------------------
