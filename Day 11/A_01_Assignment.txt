@@ -1,0 +1,26 @@
+1. How can you access the first child node of the <body> element in the DOM?
+Example:
+
+2. Convert the child nodes of the <body> element into an array and display the array in the console.
+
+3. What is the difference between parentNode and parentElement when navigating the DOM?
+
+4. How can you access the next sibling of the first child node inside the body element?
+
+5.  Use a for...of loop to iterate over all the child elements of the <body> and print them.
+
+6. How do you check if the first child of the <body> element is equal to the first node of the document?
+
+7. How can you access the last child node of the document’s <body> element using the childNodes property?
+
+8. What’s the difference between firstChild and firstElementChild when navigating the DOM?
+
+9. How can you list all descendant nodes (including text nodes) of the body using a for...of loop?
+let allNodes = document.body.childNodes;
+for (let node of allNodes) {
+    console.log(node);
+}
+
+10. What will the following code print, and why?
+console.log(document.body.firstChild.nextSibling);
+
