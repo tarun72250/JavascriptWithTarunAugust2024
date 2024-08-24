@@ -1,0 +1,55 @@
+Table Based Navigation Questions :- 
+
+1. Create a table with at least 4 rows. Write JavaScript code that highlights (changes background color) of rows with an even index (0, 2, etc.).
+Hint: Use tvar.rows[i].style.backgroundColor where i is an even index.
+
+2. Check if the table already has a caption. If not, add a caption with the text "Student Data".
+Hint: Use tvar.caption to check and tvar.createCaption() to add.
+let caption = table.createCaption();
+  caption.innerText = "Student Data";
+
+3. Create a table with multiple rows. Write JavaScript code to count the total number of rows and display the count above the table.
+Hint: Use tvar.rows.length to get the count and create a div to display the result.
+
+4. Write JavaScript code to update the content of the last row in a table to "Updated Data".
+Hint: Use tvar.rows[tvar.rows.length - 1].cells.
+
+5. Check if the table has a footer row. If not, add a footer row that spans across both columns and displays "End of Data".
+Hint: Use tvar.tFoot to check and tvar.createTFoot() to add
+-----------------------------------------------------------------------------------------------------------------------------
+
+DOM methods Assignment :- 
+
+1. Change Text Content Using getElementById
+Task: Select the <h1> element with id="head-id" and change its text content to "DOM Manipulation Updated".
+Using :- textContent property to udate the content of heading.
+
+2. Change Background Color of Paragraphs Using getElementsByClassName
+Task: Select all paragraphs with the class "para-class" and change their background color to light gray.
+
+3. Add Border to Paragraphs Using getElementsByTagName
+Task: Select all <p> elements and apply a red border to each of them.
+
+4. Change Font Size Using getElementById
+Task: Select the paragraph with id="para-id" and change its font size to 18px.
+
+5. Update Content of Multiple Elements Using getElementsByTagName
+Task: Select all <p> elements and update their content to "This is updated content" using a loop.
+Using :- textContent property to udate the content of heading.
+
+6.Apply CSS Styles Using querySelector
+Task: Use querySelector to select the first paragraph on the page and change its text color to purple.
+
+7. Count Elements Using querySelectorAll
+Task: Use querySelectorAll to count the number of <p> elements on the page and display the count in an alert box.
+
+8. Change Text Color Based on Class Using getElementsByClassName
+Task: Select all elements with the class "para-class" and change their text color to brown.
+
+9. Highlight All h1 and h2 Elements Using getElementsByTagName
+Task: Select all h1 and h2 elements and highlight them with a yellow background.
+
+10. Change Text Content of the First Paragraph Using querySelector
+Task: Use querySelector to change the text of the first paragraph to "First Paragraph Updated".
+
+-----------------------------------------------------------------------------------------------------------------------
