@@ -1,0 +1,85 @@
+1. Create a navbar and change the color of its first element to red.
+2. Create a table without tbody.  Now use "View page source " button to check wheather it has a tbody or not.
+3. Create an element with 3 children . Now change the color of first and last element to green.
+4. Write a js code to change background of all <li> tags to cyan.
+5. Which of the following is used to look for the farthest ancestor that matches a given CSS selector.
+    a. matches
+    b. closest 
+    c. contains
+    d. none of these 
+
+6. Create Snake , Water and gun game in js 
+The game should ask u to enter S , W or G.
+The computer should generates S, W, or G and declare win or loss using alert.
+Hint :- Use alert , prompt and confirm wherever required.
+
+
+7. Select the element with the ID "heading" and change its text content to "DOM Manipulation with getElementById". and provide some backgroundColor and using text-property give some common styling for them .
+
+8. Select all elements with the class "highlight" and change their background color to lightblue.
+ <p class="highlight">This is the first paragraph.</p>
+    <p class="highlight">This is the second paragraph.</p>
+    <p>This paragraph does not have the highlight class.</p>
+
+9. Select all <li> elements and change their text color to green and font weight to bold.
+  <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+10. Select the first <p> element using querySelector and all <p> elements using querySelectorAll. Change the background color of the first paragraph to lightyellow and the rest to lightgray.
+  <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+
+11. Check if a given element matches a specific CSS selector and change its style accordingly.
+if style matches change its background-color to "orange".
+ <div id="box1" class="container">
+        This is a container.
+    </div>
+
+12. Find the nearest ancestor with the class "container" and change its background color.
+  <div class="container">
+        <div class="sub-container">
+            <span id="inner-text">This is inside a nested container.</span>
+        </div>
+    </div>
+    
+13. Select a button inside a nested div and check if the nearest ancestor with a specific class is found.
+ <div class="outer">
+        <div class="inner">
+            <button id="check-button">Click Me</button>
+        </div>
+    </div>
+
+14. Check if one element contains another and display a message based on the result.
+<div id="container">
+        <p id="child">This is inside the container.</p>
+    </div>
+
+15. Dynamically create an element and check if it is contained within a parent element.
+   <div id="parent">
+        Parent Element
+    </div>
+
+16. Select the first <span> element and display its tag name using tagName. Then change its background color if the tag name matches "SPAN".
+
+17. Select the first <span> element and display its node name using nodeName. Then change its text content based on the node name.
+
+18. Select the first <span> element and compare its tagName and nodeName properties. Log a message if both are equal.
+
+19. Select a <div> element and change its content using innerHTML. Include both text and HTML tags.
+
+20. Replace an entire element using outerHTML.
+
+21. Access the first child of the body and log its content if it's a text node.
+
+22. Access and modify the content of the first text node inside the body.
+
+23. Replace the content of a <div> element using innerHTML, then replace the entire element using outerHTML
+
+24. Access the second child node of the body and log its node type
+
+25. Iterate over all child nodes of the body and log their node names.
+

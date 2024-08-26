@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tagName and nodeName in js DOM</title>
+</head>
+<body>
+    Hello world 
+    <span id="one">Hello From DebugShala</span>
+    
+    <script>
+//         Used to read tag name of an element
+// tagName => only exists for an Element nodes
+// nodeName => defined for any node (text, comment etc).
+
+let x = document.getElementsByTagName('span')[0];
+// console.log(x);
+
+
+let y = document.getElementsByTagName('span')[0];
+// console.dir(y);
+//---------------------------------------------------------------------------------------------
+//innerHTMl or outerHTML property 
+
+
+//innerHTML property :- The innerHTML property allows to get an HTML inside the element as a String.(valid for element nodes only).
+
+//outerHTML :- The outerHTML property contains the full HTML  innerHTML + the element itself.
+
+
+//-----------------------------------------
+//if something ill write in directly in body so acces using these methods
+
+//document.body.firstChild.data
+//document.body.firstChild.nodeValue
+
+
+    </script>
+</body>
+</html>
