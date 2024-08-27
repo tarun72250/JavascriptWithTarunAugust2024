@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and set Methods in JS</title>
+</head>
+<body>
+    
+    <div id="id1"  class="class1" data-one="one" data-two="two">Hello From DebugShala</div>
+
+
+
+    <script>
+      //Attributes Methods :- Get and set Methods in JS
+      
+
+      //1. elem.getAttribute("name") :- Method used to get the value of an attribute .
+
+        let id1 = document.getElementById("id1");
+        let a = id1.getAttribute("class");
+        console.log(a);
+
+
+       //2. elem.hasAtytribute():- This Method is check for an existence of an particular attribute.
+       //this return boolean value
+
+       console.log(id1.hasAttribute("class"));//true
+       console.log(id1.hasAttribute("style"));//false
+       
+
+       //3. elem.setAttribute() :- This is method is used to set the value of an Attribute.
+       //id1.setAttribute(name , value);
+
+       //id1.setAttribute("class","jayendra");
+
+       //id1.setAttribute("hidden","true");
+
+
+        //4. elem.removeAttribute() :- This method is used to remove the Attribute of an element.
+        //id1.removeAttribute("class");
+
+        //id1.removeAttribute("class");
+
+
+
+        //Custome Attribute :- data-*
+        //console.log(id1.attributes);//these will return all attributes
+        // console.log(id1.dataset);//these will return cistome attribute
+
+        // console.log(id1.dataset.one);//one
+        // console.log(id1.dataset.two);//two
+
+        // id1.dataset.one = "krishna";
+        // id1.dataset.two = "radha";
+        
+        // console.log(id1.dataset.one);//one
+        // console.log(id1.dataset.two);//two
+
+
+    </script>
+</body>
+</html>

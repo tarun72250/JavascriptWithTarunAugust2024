@@ -1,0 +1,97 @@
+classList and className property Task for today :- 
+
+1. Change the Background Color Based on an Attribute Value:
+
+Write a JavaScript function that checks if a <div> element has the attribute data-color. If it exists, change the background color of the <div> to the value stored in the data-color attribute. If it doesn't exist, set the background color to gray.
+
+Hint: Use getAttribute(), hasAttribute(), and style.backgroundColor.
+
+2. Toggle Visibility with Custom Attributes:
+
+Write JavaScript code that toggles the visibility of a <div> element by setting the hidden attribute. If the element is visible, add the hidden attribute to hide it. If it's hidden, remove the hidden attribute to show it.
+
+Hint: Use setAttribute() and removeAttribute() methods.
+
+3. Display Custom Data Attributes in a List:
+
+Write a JavaScript function that takes an element and displays all of its data-* attributes and their values in an unordered list below the element.
+
+Hint: Use dataset and loop through its properties.
+
+4. Modify Multiple Attributes Dynamically:
+
+Create a JavaScript function that changes multiple attributes of an element at once. Specifically, update the class, data-category, and data-level attributes with new values provided as input.
+
+Hint: Use setAttribute() multiple times within the function.
+
+5. Check and Add Missing Attributes:
+
+Write JavaScript code that checks if a <div> element has certain attributes (class, data-status, title). If any of these attributes are missing, add them with default values. Then, display the updated attributes in the console.
+
+Hint: Use hasAttribute() combined with setAttribute().
+
+6. Add an Element at the Beginning and End:
+
+Create a JavaScript function that inserts a new <p> element with the text "New Element at the Beginning" at the beginning of the .container div and another <p> element with the text "New Element at the End" at the end of the same div.
+
+Hint: Use prepend() and append() methods.
+
+7. Insert Multiple Elements Dynamically:
+
+Write JavaScript code that creates and inserts three new <span> elements with different texts after the #one div inside the .container. The texts should be "Span 1", "Span 2", and "Span 3".
+
+Hint: Use createElement() and after() multiple times.
+
+8. Replace an Existing Element with a New One:
+
+Write a JavaScript function that replaces the existing #one div with a new <h2> element containing the text "This is a replacement element."
+
+Hint: Use replaceWith() method.
+
+9. Add a Header Above and Below an Element:
+
+Create a JavaScript function that adds an <h3> element with the text "Above the Element" before the #one div and another <h3> element with the text "Below the Element" after the #one div.
+
+Hint: Use before() and after() methods.
+
+10. Insert a New Element Inside a Div Using appendChild:
+
+Write JavaScript code that creates a new <p> element with the text "Appended with appendChild()" and appends it as the last child inside the .container div.
+
+Hint: Use createElement() and appendChild() methods.
+
+11. nsert HTML at Specific Positions:
+
+Write a JavaScript function that inserts the following <span> elements with the respective texts at different positions relative to a <div> with ID #insertHere:
+
+"Before Begin" before the element.
+"After Begin" at the beginning inside the element.
+"Before End" at the end inside the element.
+"After End" after the element.
+
+Hint: Use insertAdjacentHTML() with different positions (beforebegin, afterbegin, beforeend, afterend).
+
+12. Insert a New Element Using insertAdjacentElement:
+
+Write JavaScript code that creates a new <h2> element with the text "Inserted with insertAdjacentElement" and inserts it after a <div> with ID #firstDiv.
+
+Hint: Use insertAdjacentElement('afterend', newElement).
+
+13. Add Text at the Beginning and End of an Element:
+
+Create a function that adds plain text at both the beginning and the end of a <div> with ID #textDiv using the insertAdjacentText method.
+
+Hint: Use insertAdjacentText('afterbegin', text) and insertAdjacentText('beforeend', text).
+
+14. Insert an Image Before and After an Element:
+
+Write JavaScript code that inserts an image element <img src="path_to_image.jpg"> before and after a <div> with ID #imageContainer. Ensure the images appear outside the div.
+
+Hint: Use insertAdjacentHTML('beforebegin', '<img ...>') and insertAdjacentHTML('afterend', '<img ...>').
+
+15. Create and Insert a Custom Element Inside an Existing Div:
+
+Write a function that creates a new custom <section> element with the text "Custom Section" and inserts it inside the #firstDiv at the end.
+
+Hint: Use insertAdjacentElement('beforeend', newElement).
+

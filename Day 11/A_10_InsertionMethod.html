@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Method Of DOm</title>
+</head>
+<body>
+
+  Starting of the body (outer)
+    <div class="container">
+      Starting of the container in first div (inner)
+      <div id="one">I am in first div</div>
+      Ending of the container in first div (inner)
+    </div>
+    Ending of the body (outer)
+
+
+
+    <script>
+      //raw logic to add any element inside any div
+    let a = document.getElementsByTagName("div")[0];
+    //a.innerHTML += "<h1> Hello From DebugShala...!</h1>";
+
+
+    //other way of insertion of any element
+    //1. createElement():-
+    let div = document.createElement("div");
+    div.innerHTML += "<h1> Hello From DebugShalaa..!";
+    
+
+      //2. appendChild():- This method is used to append any specific tag inside any element.
+      //a.appendChild(div);
+
+
+
+      //3. node.append(element):- append at the end of the element
+      //a.append(div);//add at last of element
+
+
+      //4. node.prepend(element):- append at the start off the element.
+      // a.prepend(div);
+
+      //5. node.after(element):- add after element 
+      // a.after(div);
+
+      //6. node.before(element):- add before element 
+      // a.before(div);
+
+
+      //7. node.replaceWith():- replace the node with given node
+      a.replaceWith(div);
+
+    </script>
+</body>
+</html>
