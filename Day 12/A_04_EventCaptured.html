@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Captured in JS</title>
+</head>
+<body>
+    
+
+    <button id="btn"> Click me</button>
+    <script>
+            function checkTarget(e)
+            {
+                    console.log(e.target);
+                    console.log(e);
+                    console.log(e.type);
+                    console.log(e.clientX , e.clientY)
+            }
+
+            let a = document.getElementById("btn");
+            a.addEventListener("click",checkTarget)
+    </script>
+</body>
+</html>

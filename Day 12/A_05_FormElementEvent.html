@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormElement event in js</title>
+</head>
+<body>
+    
+    <!-- Enter your name: <input type="text" name="fname" id="fname" onblur="changeLetter()"> -->
+
+
+    First name: <input type="text" id="fname" onfocus="myFunction(this.id)"><br>
+    Last name: <input type="text" id="lname" onfocus="myFunction(this.id)">
+
+
+    <script>
+        //Form ELement event :- Events triggered by actions inside a HTML form (applies to almost all HTML elements, but is most used in form elements):
+
+        //onblur , submit , focus etc  are the imp form events.        
+
+
+        function changeLetter()
+        {
+            let a = document.getElementById("fname");
+            a.value = a.value.toUpperCase();
+        }
+
+
+        function myFunction(x)
+        {
+            document.getElementById(x).style.background ="yellow";
+
+            
+        }
+
+
+    </script>
+</body>
+</html>

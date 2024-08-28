@@ -1,0 +1,80 @@
+1. Write a JavaScript program that creates a button and add a click event listener to log a message when it's clicked.
+
+2. Write a JavaScript program to create a dropdown menu that shows and hides its options when clicked.
+
+3. Write a JavaScript function that changes the background color of an element when a mouse enters it.
+
+4. Write a JavaScript program to create a slideshow that changes the displayed image when a next or previous button is clicked.
+
+5.  Write a JavaScript program to implement a toggle switch that changes its state when clicked.
+Explanation:
+
+In the above exercise,
+We have a <div> element with the class toggle that represents a toggle switch. The switch has an initial state of "off" (default) defined by the .toggle class. When the switch is toggled on, the .on class is added to the toggle element, changing its appearance.
+
+CSS styles define the toggle switch's appearance and behavior. The .toggle class sets the dimensions, position, border radius, and transition properties. The .toggle::before pseudo-element creates the circular handle of the switch. The .toggle.on class changes the background color of the switch when it is toggled on. The .toggle.on::before class transforms the handle to the "on" position.
+
+The JavaScript code attaches a click event listener to the toggle element. When the toggle switch is clicked, the event listener toggles the .on class on the 
+toggle element using the classList.toggle() method. This changes the state of the switch and triggers the corresponding CSS styles for the on or off state.
+
+
+6. Write a JavaScript program that adds a keydown event listener to a text input to detect when the "Enter key" is pressed.
+Explanation:
+
+In the above exercise -
+
+First we define an input element with the id "textInput". The JavaScript code retrieves this input element using document.getElementById('textInput') and assigns it to the textInput variable.
+Next we attach an event listener to the text input using the addEventListener method. We specify the event type as "keydown" to detect when any key is pressed while the text input has focus.
+Inside the event listener function, we check if the event.key property is equal to "Enter". If it is, we log a message to the console indicating that the Enter key was pressed.
+
+7. Write a JavaScript function that listens for a double click on an element and performs a specific action.
+Explanation:
+
+In the above exercise,
+
+First, we define a button element with the id "myButton". The JavaScript code retrieves this button element using document.getElementById('myButton') and assigns it to the myButton variable.
+Next we attach an event listener to the button using the addEventListener method. We specify the event type as "dblclick" to detect double clicks on the button.
+Inside the event listener function, we log a message to the console indicating that the double click action was performed. You can replace the console.log statement with your desired action.
+
+8. Create a input feild when type any color in the input feild , so according to that my div background color will change in that color at runtime. |
+
+9.  Create a div element with some text inside. When the mouse hovers over the div, change the text color to red, and when the mouse leaves, revert the text color back to its original state.
+Hint: Use the onmouseover and onmouseout events.
+
+10. Create two div elements. Assign onmouseenter to the first and onmouseover to the second. Both should display an alert when triggered. Experiment by placing child elements inside each div and observe how each event behaves when moving the mouse within the div and its child elements.
+Hint: Explain the difference in behavior between onmouseenter and onmouseover.
+
+11. Create a button that shows a message saying "Button Pressed" when the mouse button is pressed down and shows "Button Released" when the mouse button is released over the button.
+Hint: Use onmousedown and onmouseup events.
+
+12. Create a div that changes its text content to "Mouse Entered" when the mouse enters the div, changes to "Mouse Over" when the mouse hovers within the div, and finally changes to "Mouse Left" when the mouse leaves the div.
+Hint: Use a combination of onmouseenter, onmouseover, and onmouseleave events.
+
+13.  Create a button that toggles the visibility of a paragraph. When the button is clicked, the paragraph should be hidden if it's currently visible, and shown if it's currently hidden.
+Hint: Use the onclick event and CSS properties like display or visibility.
+
+14. Create an image that changes to a different image when the mouse hovers over it, and reverts back to the original image when the mouse leaves.
+Hint: Use onmouseover and onmouseout events with src attribute manipulation.
+
+15. Use addEventListener to handle a button click event and change the button text to "Clicked!" each time it's pressed.
+Hint: Compare using addEventListener versus using inline event handling (onclick attribute).
+
+16. Create a text input field. Use the keydown event to display each key pressed by the user in a separate line in a paragraph below the input field.
+Hint: Use event.key to capture and display the key pressed.
+
+17. Create an input field that changes the background color of the page to yellow if the user presses the "y" key, blue if the "b" key is pressed, and resets to white if the "r" key is pressed.
+Hint: Use the keydown event and a conditional statement to check the specific keys pressed.
+
+18. Create a password input field that checks for at least 8 characters on the keyup event and displays a message "Password is valid" or "Password is too short" below the input.
+Hint: Use keyup to trigger the validation and display messages accordingly.
+
+19. Create a text input that only allows numeric input. Display a message "Only numbers are allowed" if any non-numeric key is pressed using the keypress event.
+Hint: Use the event.key and check if it's not a number; display the message.
+
+20. Create an input field that shows the current date and time in a paragraph below it each time a key is released (on keyup).
+Hint: Use the keyup event and new Date() to display the current date and time.
+
+
+
+
+

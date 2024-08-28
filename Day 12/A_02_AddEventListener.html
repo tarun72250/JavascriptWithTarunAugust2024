@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener() in js</title>
+</head>
+<body>
+    
+
+    <img id="h1d" src="1.jpg" style="height: 100px; width: 100px;"/>
+
+    <script>
+        
+        //Note :- Adding a handler in js,  overwrite the existing handler(inline)
+
+
+        //addEventListener() ;- is used to assign multple handlers to an event.
+        //here addEventListener(event , handler); 
+
+
+        let a = document.getElementById("h1d");
+        //1 way :- 
+        a.addEventListener("mouseover",function over()
+        {
+            a.style.height ="300px";
+            a.style.width ="300px";
+        })
+    
+
+        a.addEventListener("mouseout", over);
+
+        function over()
+        {
+            a.style.height="100px";
+            a.style.width="100px";
+        }
+
+
+    </script>
+</body>
+</html>

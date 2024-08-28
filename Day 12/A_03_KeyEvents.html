@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Events in JS</title>
+</head>
+<body>
+
+
+    <input type="text" id="one" placeholder="press any key...!" />
+
+    <p id="status">......</p>
+
+    <script>
+
+
+        //KeyBoard events :- 
+        //keydown , keyup , keypress :- 
+
+
+        let a = document.getElementById("one");
+
+        a.addEventListener("keydown", onKeyDown);
+        a.addEventListener("keyup", onKeyUp);
+        
+        function onKeyDown(event)
+        {
+           let aa =  document.getElementById("status");
+           aa.innerHTML += "keydown:" + event.key + "</br>";
+        }
+
+        function onKeyUp()
+        {
+            let aa =  document.getElementById("status");
+            aa.innerHTML += "keyup:" + event.key + "</br>";
+        }
+
+    </script>
+    
+</body>
+</html>

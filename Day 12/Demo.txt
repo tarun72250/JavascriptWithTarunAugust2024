@@ -1,0 +1,292 @@
+Browser Events :- 
+
+Events :- An event is an action as per user's interaction or instruction some input
+There are diff types of events get generated when user perform some actions like :- 
+mouse click , keyboard events , form elements events , and documents events.
+
+Mouse events ;-
+
+
+
+Event	        Occurs When
+onclick	        A user clicks on an element
+onmouseover	    The mouse pointer moves onto an element
+onmouseup	    A mouse button is released over an element
+
+onmouseover event ;-
+<div id="container1" onmouseover="alert('inside div element onmouseover')" style="background-color: aqua;">Hello all</div>
+
+          #container1{
+            height: 200px;
+            width: 500px;
+            font-size: larger;
+            text-align: center;
+        }
+
+
+-----------------------------------------------------------------------------
+onmouseenter event :- 
+use single quote inside double quotes :- 
+
+<div id="container2" onmouseenter="alert('inside div element onmousenter')" style="background-color: burlywood;">Hello all from DebugShala</div>
+
+#container2{
+            height: 200px;
+            width: 500px;
+            font-size: larger;
+            text-align: center;
+        }
+
+
+-----------------------------------------------------------------------------
+onclick event :-
+<button id="one" onclick="alert('inside Alert ,  event fired onclick()')" style="background-color: cadetblue;">CLick Me</button>
+
+
+in button click we want to add some fn :- 
+
+<button id="one" onclick="hello()" style="background-color: cadetblue;">CLick Me</button>
+ 
+ in js we write this fn 
+
+ function hello()
+         {
+            alert("Hello From DebugShala onclick()...")
+         }
+-----------------------------------------------------------------------------
+
+Note :- Adding a handler in js,  overwrite the existing handler(inline)
+
+
+addEventListener() ;- is used to assign multple handlers to an event.
+here addEventListener(event , handler); 
+
+let see an example :- if we want to get some id and add addEventListener and give some event to and function to them and seen the changes .
+
+
+<img id="h1d" src="1.jpg" style="height: 150px; width: 150px;"/>
+
+
+            //1 way
+            document.getElementById("h1d").addEventListener("mouseover",  function over() {
+                let a = document.getElementById("h1d");
+                    a.style.height = "300px";
+                let b = document.getElementById("h1d");
+                    b.style.width = "300px";
+            })
+
+            //2 way :- difining these way fn is a good approach.
+            document.getElementById("h1d").addEventListener("mouseout", out)
+            function out() {
+                document.getElementById("h1d").style.height = "150px";
+                document.getElementById("h1d").style.width = "150px";
+            }
+-----------------------------------------------------------------------------
+
+Keyboard events :- 
+keydown event :-
+keyup event :-
+keypress event :- 
+
+
+//let see an example :- 
+<p>
+        <b>Keyup , onKeydown Events</b>
+</p>
+  
+<input type="text" id="one" placeholder="press any key...!" />
+
+<p id="status">......</p>
+
+in script.js file 
+
+let a = document.getElementById("one");
+a.addEventListener("keydown",onKeyDown);
+a.addEventListener("keyup", onKeyUp);
+
+function onKeyDown(event)
+{
+    document.getElementById("status").innerHTML += 'keydown:' + event.key+ '</br>'
+}
+
+function onKeyUp()
+{
+    document.getElementById("status").innerHTML += 'keyup:' + event.key + '</br>'
+}
+
+-----------------------------------------------------------------------------
+
+now if we check that which thing i should target to check like these 
+
+let see an example :- 
+    <button id="btn"> Click me </button>
+
+in script.js :- 
+
+            let checkTarget = function(e)
+            {
+                console.log(e.target);
+                console.log(e);            
+            }
+            
+
+            let a = document.getElementById("btn");
+            a.addEventListener('click',checkTarget)
+
+
+------------------------------------
+agr me fn k ander console.log(e); karu to mjhe mera pura object mil jyga.
+
+let checkTarget = function(e)
+            {
+                console.log(e.target);
+            }
+
+to mjhe ky milta h esa krne se 
+path 
+type: "click" dekh skta hu me 
+view: Window dekh skta hu me 
+
+
+app or bhi chize try kr skte ho jese event.type
+
+let checkTarget = function(e)
+            {
+                console.log(e.target);// which will u target 
+                console.log(e);//event object
+                console.log(e.type);//click
+            }
+
+or e.clientX and e.clientY is se jha par mene click kia vo bhi dekh skta hu.
+
+let checkTarget = function(e)
+            {
+                console.log(e.target);// which will u target 
+                console.log(e);//event object
+                console.log(e.type);//click
+                console.log(e.clientX, e.clientY);
+            }
+
+-----------------------------------------------------------------------------
+The event object :- 
+When an events happens , the browser creates an event object , puts details into it , and passes it as arguements to the handler.
+
+-----------------------------------------------------------------------------
+
+form element event :-Events triggered by actions inside a HTML form (applies to almost all HTML elements, but is most used in form elements):
+
+onblur , submit , focus etc  are the imp form events.
+
+-----------------------------------------------------------------------------
+onblur	script	Fires the moment that the element loses focus
+
+Enter your name: <input type="text" name="fname" id="fname" onblur="changeLetter()">
+
+
+<script>
+function changeLetter() {
+  let x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+----------------------------------------------------------------------------
+
+onsubmit	script	Fires when a form is submitted
+
+First name: <input type="text" id="fname" onfocus="myFunction(this.id)"><br>
+Last name: <input type="text" id="lname" onfocus="myFunction(this.id)">
+
+
+<script>
+function myFunction(x) {
+  document.getElementById(x).style.background = "yellow";
+}
+</script>
+-----------------------------------------------------------------------------
+onfocus	script	Fires the moment when the element gets focus
+
+
+<form action="#" onsubmit="submitFun()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function submitFun() {
+  alert("The form was submitted");
+}
+</script>
+-----------------------------------------------------------------------------
+
+Create Clock using setInterval:- 
+
+html page 
+---------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLock using setInterval</title>
+    <style type="text/css">
+
+        h1{
+            font-size: 100px;
+            text-align: center;
+            font-family: Verdana;
+        }
+    </style>
+  </head>
+  <body onload="showTime()">
+    <h1>Clock</h1>
+
+    <script src="A_02_Dom.js"></script>
+      </body>
+</html>
+
+---------
+A_02_Dom.js
+---------
+
+function showTime() 
+{
+    let d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    var session = "AM";
+
+    //3.if we want to add AM to PM logic 
+    if(h >=12)
+    {
+        session="PM"
+    }
+    
+
+     //2. if hours is greater than 12
+     if (h > 12) 
+     {
+         h = h - 12;
+         //13-12 -1;
+     }
+
+    //1. if h m s is less than 10 so concat 0
+    h = h < 10 ? "0" + h : h;//ternary operator used 
+    m = m < 10 ? "0" + m : m;
+    s = s < 10 ? "0" + s : s;
+
+   
+
+    var time = h + " : " + m + " : " + s + " " + session;
+    document.getElementsByTagName("h1")[0].innerHTML = time;
+    setTimeout(showTime, 1000);
+}
+
+---------------------------------------------------------------------------------------------------
+Assignments :-
+1. Write a program to show a different alerts when different buttons are clicked 
+2. Create a website which is capable of storing bookmarks of your favourite website using href.
+3. Repeat q2 using eventlisteners.
+4. Write a js program to keep fetching content of a website (every 5 seconds)
+5. Create a glowing bulb , effect usiing classList toggle in js.
+
