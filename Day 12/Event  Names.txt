@@ -1,0 +1,30 @@
+Common Event Categories and Examples:
+Mouse Events:
+click: Fired when an element is clicked.
+dblclick: Fired when an element is double-clicked.
+mouseover: Fired when the mouse pointer is moved onto an element.
+mouseout: Fired when the mouse pointer is moved out of an element.
+mousedown: Fired when a mouse button is pressed down on an element.
+mouseup: Fired when a mouse button is released over an element.
+mousemove: Fired when the mouse pointer is moved over an element.
+
+Keyboard Events:
+keydown: Fired when a key is pressed down.
+keyup: Fired when a key is released.
+keypress: Fired when a key is pressed down and character keys generate a character.
+
+Form Events:
+submit: Fired when a form is submitted.
+change: Fired when an input element's value changes.
+focus: Fired when an element gains focus.
+blur: Fired when an element loses focus.
+input: Fired when the value of an input element is changed.
+
+Window Events:
+load: Fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
+resize: Fired when the document view (window) is resized.
+scroll: Fired when the document view or an element is scrolled.
+unload: Fired when the document or a child resource is being unloaded.
+
+MDN Web Docs: Mozilla's documentation provides a comprehensive list of all events that can be used with addEventListener.
+W3C Specification: The World Wide Web Consortium's documentation on the DOM Level 3 Events specification provides detailed technical information on all events.

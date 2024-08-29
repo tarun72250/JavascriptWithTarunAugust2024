@@ -1,0 +1,67 @@
+Assignments :-
+1. Write a program to show a different alerts when different buttons are clicked 
+2. Create a website which is capable of storing bookmarks of your favourite website using href.
+3. Repeat q2 using eventlisteners.
+4. Write a js program to keep fetching content of a website (every 5 seconds)
+5. Create a glowing bulb , effect usiing classList toggle in js.
+
+---------------------------------------------------------------------------------------------
+Dynamic Programming in js :- 
+
+1. Create Factorial Calculater where u provide some number and your logic generate factorial of that number.
+2. Create Power Calculater where u  provide some base and exponent number and your logic generate power of that number.
+3. Generate Dynamic Factorial table Calculater in js.
+4. Accept a number from the user using HTML form and check whether number is pallindrome and display the message accordingly on the web page
+5. Accept the number from the user and display the sum of digits of a number on the web page.
+6. Accept the number from the user and check whether number is prime and display the message accordingly on the web page. Give proper styling to the web page
+7. Generate image slideshow using js.
+8. Reverse a String: Accept a string input from the user using an HTML form and display the reversed string on the webpage.
+9. Fibonacci Sequence: Accept a number from the user to generate the Fibonacci sequence up to that number and display the result on the webpage.
+10. Armstrong Number Checker: Accept a number from the user and check whether it is an Armstrong number, displaying the message accordingly on the webpage.
+11. Temperature Converter: Create a temperature converter where the user can input a value in Celsius, and the program calculates and displays the equivalent in Fahrenheit and Kelvin.
+12. Leap Year Checker: Accept a year from the user and check whether it is a leap year, displaying the message accordingly on the webpage.
+13. Character Counter: Accept a string from the user and display the count of each character, ignoring spaces, on the webpage.
+14. Multiplication Table Generator: Accept a number from the user and generate a multiplication table for that number, displaying it on the webpage.
+15. Vowel Counter: Accept a string from the user and count the number of vowels in the string, displaying the result on the webpage.
+16. Currency Converter: Create a currency converter where the user can input an amount in USD, and the program converts and displays the equivalent in INR, EUR, and GBP.
+17. Odd or Even Checker: Accept a number from the user and check whether it is odd or even, displaying the message accordingly on the webpage.
+18. Factor Finder: Accept a number from the user and display all factors of that number on the webpage.
+19. Quadratic Equation Solver: Accept coefficients (a, b, c) of a quadratic equation from the user and display the roots on the webpage.
+20. GCD Calculator: Accept two numbers from the user and calculate the Greatest Common Divisor (GCD) of those numbers, displaying the result on the webpage.
+
+
+----------------------------------------------------------------------------------------------
+Task for today :- 
+
+
+1. Form Validation in JavaScript | Complete Form Validation  
+URL :- https://www.youtube.com/watch?v=S3_SZqf2h8M
+
+2. Create analog and digital both clock in one window .
+
+3. Create stop watch using js 
+
+4. Click Me! Game: Create an HTML page with a single button element that says "Click Me!". then JavaScript code that listens for a click event on the button.
+When the button is clicked, change the button's text to "You Clicked Me!" and its background color (e.g., red) using DOM manipulation methods.
+
+5. Dynamic To-Do List:Create an HTML page with an input field for adding new tasks and a button to submit them. Get references to the input field and a container element (e.g., ul) for holding the tasks. Create a new li element for each task entered. Append the newly created li element to the container (ul). Set the content of the li element to the entered task description. Add an event listener to the button that triggers the task addition process when clicked.
+
+6. Changing Element Style: Create an HTML page with multiple colored boxes (e.g., div elements). Select all colored boxes. Change the style properties (e.g., backgroundColor, border) of the selected boxes using methods like: Direct assignment (e.g., box.style.backgroundColor = "yellow") Adding/removing classes with different style definitions in a CSS file.Event Listeners: Optionally, add event listeners (e.g., click) to change the style of a box when it's clicked.
+
+7. Image Swapping: Create an HTML page with an image element and two buttons (Next, Previous).Get references to the image element and both buttons.Store an array of image paths representing different images.Attach a click event listener to the Next button that:Increments a counter variable to keep track of the current image index within the image path array.
+Updates the src attribute of the image element with the next image path using the counter.(Optional) Implement logic to handle reaching the end of the image array and potentially resetting the counter.Attach a similar click event listener to the Previous button that decrements the counter and updates the image accordingly, handling potential underflow at the beginning.
+
+8. Creating and Removing Elements:Create an HTML page with a button.Create a new paragraph element with some initial text content when the button is clicked using an event listener.
+Append the newly created paragraph to a container element (e.g., div) on the page. When the user clicks on the paragraph itself, remove it from the document using event listeners.
+
+
+9. Text Manipulation: Create an HTML page with a heading element and a button.Get references to the heading element and the button. Access and display the current text content of the heading element in an alert message when the button is clicked.Allow the user to modify the heading's text content through a prompt and update the heading element using the entered text.
+
+
+10. Create an HTML registration form that includes fields for user name, email, address, city, gender, and mobile number. When the user submits the form, the data should be displayed in a table below the form. Details: Use DOM manipulation to add the submitted data as a new row in the table each time the form is submitted. Make sure the table has appropriate headers for each field.
+
+make sure all these you have to do with some basic designing part as well.
+
+
+----------------------------------------------------------------------------------------------
+

@@ -1,0 +1,206 @@
+
+Create Clock using setInterval:- 
+
+html page 
+---------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLock using setInterval</title>
+    <style type="text/css">
+
+        h1{
+            font-size: 100px;
+            text-align: center;
+            font-family: Verdana;
+        }
+    </style>
+  </head>
+  <body onload="showTime()">
+    <h1>Clock</h1>
+
+    <script src="A_02_Dom.js"></script>
+      </body>
+</html>
+
+---------
+A_02_Dom.js
+---------
+
+function showTime() 
+{
+    let d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    var session = "AM";
+
+    //3.if we want to add AM to PM logic 
+    if(h >=12)
+    {
+        session="PM"
+    }
+    
+
+     //2. if hours is greater than 12
+     if (h > 12) 
+     {
+         h = h - 12;
+         //13-12 -1;
+     }
+
+    //1. if h m s is less than 10 so concat 0
+    h = h < 10 ? "0" + h : h;//ternary operator used 
+    m = m < 10 ? "0" + m : m;
+    s = s < 10 ? "0" + s : s;
+
+   
+
+    var time = h + " : " + m + " : " + s + " " + session;
+    document.getElementsByTagName("h1")[0].innerHTML = time;
+    setTimeout(showTime, 1000);
+}
+
+---------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------
+Create stopWatch using js 
+--------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch using javascript</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="stopWatch"> 00:00:00</div>
+
+        <div id="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+
+        </div>
+    </div>
+  
+    <script src="A_03_Dom.js"></script>.
+</body>
+</html>
+------------
+script.js
+------------
+const timer = document.getElementById("stopWatch");
+
+var hr = 0;
+var min = 0;
+var sec = 0;
+
+var stopTime = true;
+
+function startTimer() {
+    if (stopTime == true) {
+        stopTime = false;
+        timerCycle()
+    }
+}
+
+function stopTimer() {
+    if (stopTime == false) {
+        stopTime = true;
+    }
+}
+
+function timerCycle() {
+    if (stopTime == false) {
+        sec = parseInt(sec);
+        min = parseInt(min);
+        hr = parseInt(hr);
+
+        sec = sec + 1;
+        if (sec == 60) {
+            min = min + 1;
+            sec = 0;
+        }
+
+        if (min == 60) {
+            hr = hr + 1;
+            min = 0;
+            sec = 0;
+        }
+
+        //if sec , min , and hr are < 10 . so these are in single minutes  so add 0 to them 
+
+        if (sec < 10) {
+            sec = "0" + sec;
+        }
+
+        if (min < 10) {
+            min = "0" + min;
+        }
+
+        if (hr < 10) {
+            hr = "0" + hr;
+        }
+
+        timer.innerHTML = hr + " : " + min + " : " + sec;
+        setTimeout(timerCycle, 1000)
+    }
+}
+
+function resetTimer() {
+    //time will be reset
+    timer.innerHTML = "00:00:00";
+    stopTime = true;
+    hr = 0;
+    sec = 0;
+    min = 0;
+}
+
+
+----------------------------------------------------------------------------------------------
+
+TODO List app :- 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <h1>My To-Do List</h1>
+    <input type="text" id="newTask" placeholder="Enter new task" />
+    <button id="addButton">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+      const inputField = document.getElementById("newTask");
+      const addButton = document.getElementById("addButton");
+      const taskList = document.getElementById("taskList");
+
+      addButton.addEventListener("click", function () {
+        const newTask = inputField.value;
+        if (newTask) {
+          const listItem = document.createElement("li");
+          listItem.textContent = newTask;
+          taskList.appendChild(listItem);
+          // Clear the input field for the next task
+          inputField.value = "";
+        } else {
+          alert("Please enter a task!");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+
+
+--------
+Do assignments for that 
