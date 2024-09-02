@@ -1,0 +1,31 @@
+1. Create a JavaScript function called fetchData that accepts a callback function. Simulate fetching data with a delay of 2 seconds using setTimeout. Once the data is "fetched," the callback function should be executed, printing "Data fetched successfully."
+Hint: Use setTimeout to simulate a delay, and pass the callback function to handle the fetched data.
+
+2. Write a JavaScript code snippet that demonstrates callback hell by using nested callbacks. The first callback should log "Step 1 completed," the second should log "Step 2 completed," and the third should log "Step 3 completed," each with a 1-second delay.
+Hint: Use nested setTimeout functions to mimic callback hell.
+
+3. Create a Promise that simulates an API call. The Promise should resolve after 2 seconds with a message "API call successful." Use then() to handle the resolved value and log it to the console.
+Hint: Use setTimeout inside the Promise to simulate the delay.
+
+4. Create a chain of Promises where the first Promise resolves with "Task 1 complete," the second resolves with "Task 2 complete," and the third resolves with "Task 3 complete." Each Promise should resolve after a 1-second delay.
+Hint: Use .then() to chain the Promises together.
+
+5. Write a function fetchUserData using async-await that simulates fetching user data from an API with a 3-second delay. The function should log "Fetching user data..." before the delay and log "User data fetched successfully" after the delay.
+Hint: Use await to handle the Promise that simulates the delay.
+
+6. Create a function multiply that multiplies two numbers and logs the result. Then, create a function calculator that takes two numbers and a callback function. Use calculator to call multiply with numbers 4 and 5.
+Hint: The calculator function should accept a callback as an argument and invoke it with the numbers.
+
+7. Write an asynchronous callback function displayMessage that prints "Hello, World!" after 3 seconds using setTimeout. Call this function when a button is clicked on the webpage.
+Hint: Use setTimeout to introduce a delay and trigger the callback when the button is clicked.
+
+8. Write a series of nested callbacks using setTimeout to log "Step 1", "Step 2", and "Step 3" to the console, each with a 1-second delay. This should demonstrate a callback hell structure.
+Hint: Nest three setTimeout functions inside one another to mimic a pyramid structure.
+
+9. Simulate fetching three different datasets in sequence using nested callback functions. Each fetch should take 2 seconds. Print "Fetching data 1...", "Fetching data 2...", and "Fetching data 3..." sequentially in the console.
+Hint: Use setTimeout inside each callback to simulate the fetching process.
+
+10. Given a synchronous function printNumber that logs a number to the console, modify it to work asynchronously using a callback and setTimeout. It should log the numbers 1, 2, and 3 sequentially with a 1-second delay between each log.
+Hint: Introduce setTimeout inside the function to make it asynchronous and trigger the callback sequentially.
+
+

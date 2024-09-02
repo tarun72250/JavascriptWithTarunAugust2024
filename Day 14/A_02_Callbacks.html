@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBAcks in js</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //CallBack fn :- 
+        //A callback fn is a function which passed into another function as an arguement , which is then invoked inside the outer function to complete an action.
+
+        //example of synchronous programming callback :- 
+        // function sum(a,b)
+        // {
+        //     console.log(a+b);
+        // }
+
+        // function calculater(a , b, sumCallBack)
+        // {
+        //     sumCallBack(a,b);
+        //     //sum(2,3);
+        // }
+
+        // calculater(2,3, sum);
+
+        //---------------------------------------------------------------------------------------
+        //example of asynchronous programming callback :- 
+
+        // const hello=()=>{
+        //     console.log("Hello From Js..!")
+        // }
+
+        // setTimeout(hello,2000);//1sec = 2000ms
+
+
+        //-----------------------------------------------------------------------------------------
+
+
+      //Term CallBack hell :- Nested Callback stacked below one another forming a pryamind structure.
+      //(Pryamid of DOm)
+
+
+
+        //ex :- Nesting
+
+        //if else 
+        // let age = 23;
+        // if(age >=20)
+        // {
+        //     if(age > 60)
+        //     {
+        //         console.log("Senior citizen");
+        //     }
+        //     else{
+        //         console.log("adult");
+        //     }
+        // }
+        // else{
+        //     console.log("child");
+        // }
+
+        //for loop 
+
+
+        //ex:- 
+        // function getData(dataId){
+        //     console.log("data",dataId);
+        // }
+
+        //check  in console 
+        //console.log(101);
+
+        
+
+        //---------------------------------------------
+        //example of synchronous programming :- 
+        // function getData(dataId){
+           
+        //     setTimeout(()=>{
+        //         console.log("data id :",dataId);
+        //     },2000)
+        // }
+
+        
+        // getData(100);
+        // getData(200);
+        // getData(300);
+        
+
+
+        //example of synchronous programming :- 
+
+    //     function getData(dataId , getNextData){
+           
+    //        setTimeout(()=>{
+    //            console.log("data id :",dataId);
+    //            getNextData();
+    //        },2000)
+    //    }
+
+    //    getData(100 , ()=>{
+    //     getData(200);
+    //    })
+
+
+    function getData(dataId , getNextData){
+           
+           setTimeout(()=>{
+               console.log("data id :",dataId);
+               if(getNextData)
+               {
+                getNextData();
+               }
+               
+           },2000)
+       }
+
+       getData(100 , ()=>{
+        console.log("Data 1 is fetching");
+        getData(200,()=>{
+            console.log("Data 2 is fetching");
+            getData(300,()=>{
+                console.log("Data 2 is fetching");
+                getData(400);
+            })
+        });
+       })
+
+       //mdn docs :- 
+
+    </script>
+</body>
+</html>

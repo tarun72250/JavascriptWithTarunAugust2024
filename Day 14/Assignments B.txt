@@ -1,0 +1,29 @@
+Assignment :- dark mode ,light mode .
+Website sage school of MBA
+
+
+1.Create a JavaScript function that returns a Promise which resolves with the message "Data fetched successfully!" after 2 seconds.
+2.Create a JavaScript function that returns a Promise which rejects with an error message "Failed to fetch data!" if the data ID is invalid (less than or equal to 0).
+3.Create two functions that return Promises. The first function fetches user data, and the second function return rejection of that code.
+
+
+-----------------------------------------------------------------------------------------------------
+
+1.Create a function getPromise that returns a promise which resolves with a message "Hello from DebugShala success...!".
+Use the .then() method to handle the successful resolution and log the message to the console.
+
+2.Modify the getPromise function to reject with the message "Hello from DebugShala having some error in the website...!".
+Use the .catch() method to handle the rejection and log the error message to the console.
+
+3.Create two functions, asyncFunc1 and asyncFunc2, each returning a promise that resolves after 2 seconds with "some Data1" and "some Data2" respectively.
+Fetch the data from asyncFunc1 first and then from asyncFunc2, ensuring asyncFunc2 is called only after asyncFunc1 has resolved. Log the results to the console.
+
+4.Write a function getData(dataId) that returns a promise which resolves with "Data <dataId>" after 2 seconds.
+Chain multiple calls to getData for data IDs 101, 102, and 103, ensuring each subsequent call waits for the previous one to complete. Log each result to the console.
+
+5.Assume you have two API endpoints, fetchUserData and fetchUserPosts, which return user data and user posts respectively.
+Implement functions fetchUserData and fetchUserPosts that return promises resolving with "User Data" and "User Posts" after 2 seconds.
+First, fetch user data, then based on the result, fetch user posts. Use promise chaining to ensure sequential execution.
+
+6.Modify the getData function to reject if the dataId is not 101, 102, or 103.
+Implement a promise chain that fetches data for IDs 101, 104, and 103, and handles any errors gracefully, logging appropriate messages to the console.

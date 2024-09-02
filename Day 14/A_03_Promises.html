@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in Javascript</title>
+</head>
+<body>
+    
+
+    <script>
+        //Promises in Javascript :- 
+        //Promises in javascript is for "eventual" completion of task.
+
+        //there are three states in Promises terms :- unfulfilled , reject , resolve
+        // Promise have 3 states :- Pending , reject , fulfilled
+        // pending: initial state, neither fulfilled nor rejected.
+        // fulfilled: meaning that the operation was completed successfully.
+        // rejected: meaning that the operation failed.
+
+
+        //Promises in javascript are Objects.
+        //and also it is an solution for CallBack hell.
+
+        //There are two handlers whcih is passed in Promise object Fn.
+        //(resolve and reject)
+
+        // let promise = new Promise((resolve, reject)=>{
+        //     //some task 
+        //     console.log("Hello From DebugShala...!")
+        // })
+
+
+        //for resolve() :-
+       
+        // let promise = new Promise((resolve,reject)=>{
+        //     resolve("success..!")
+        // })
+
+
+        //for rejection :- 
+        // let promise = new Promise((resolve, reject)=>{
+        //     //some task 
+        //     console.log("Hello From DebugShala...!");
+        //     // reject(123);
+        //     reject("failed..!")
+        // })
+
+        //Notice :- Promise has state (resolve and reject) & some result(result for resolve & error for reject).
+
+        //Example ;- API return Promise object
+    //     function getData(dataId , getNextData){
+           
+    //         return new Promise((resolve,reject)=>{
+    //             setTimeout(()=>{
+    //             console.log("data id :",dataId);
+    //             if(getNextData)
+    //             {
+    //                 getNextData();
+    //             }
+                
+    //         },2000)
+    //         })
+    //    }
+
+    //-----------------------------------------------------------------------------------------
+    //for resolve() :-
+
+    // function getData(dataId , getNextData ){
+           
+    //        return new Promise((resolve,reject)=>{
+    //            setTimeout(()=>{
+    //            console.log("data id :",dataId);
+    //            resolve("Success.....!");
+    //            if(getNextData)
+    //            {
+    //                getNextData();
+    //            }
+               
+    //        },5000)
+    //        })
+    //   }
+    //------------------------------------------------------------------------------------------
+    //for rejection :-
+    // function getData(dataId , getNextData ){
+           
+    //        return new Promise((resolve,reject)=>{
+    //            setTimeout(()=>{
+    //            console.log("data id :",dataId);
+    //            reject("error msg.....!");
+    //            if(getNextData)
+    //            {
+    //                getNextData();
+    //            }
+               
+    //        },5000)
+    //        })
+    //   }
+
+
+      //Note :- if my promise is success we use .then() method
+      //if my promise is cancel then we use .catch() method.
+
+      //for resolve();
+    //   const getPromise =()=>{
+    //     return new Promise((resolve,reject)=>{
+    //         resolve("success ")
+    //     })
+    //   }
+
+    //   let promise = getPromise();
+
+
+    //   promise.then(()=>{
+    //     console.log("promise is succesfull...!");
+    //   })
+
+      //for rejection :- for error catching we use .catch()
+    //   const getPromise =()=>{
+    //     return new Promise((resolve,reject)=>{
+    //         reject("failed ")
+    //     })
+    //   }
+
+    //   let promise = getPromise();
+
+
+    //   promise.catch(()=>{
+    //     console.log("promise is failed...!");
+    //   })
+
+
+    //---------------------------------------------------
+    
+
+
+
+    </script>
+</body>
+</html>
