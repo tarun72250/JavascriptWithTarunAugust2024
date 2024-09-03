@@ -1,0 +1,57 @@
+Creating a Basic Promise:
+Question 1: Create a function fetchData that returns a promise resolving with the message "Data fetched!" after 2 seconds. Use .then() to print the result.
+Expected Output: Data fetched!
+
+Promise Rejection:
+Question 2: Write a function loadResource that returns a promise. If the resource ID is less than 10, reject the promise with "Invalid Resource ID." Use .then() and .catch() to handle the responses.
+Expected Output: For an ID less than 10, it should log "Invalid Resource ID."
+
+Promise with setTimeout:
+Question 3: Create a function delayedMessage that returns a promise resolving with the message "This message is delayed!" after 3 seconds. Print this message using .then().
+Expected Output: This message is delayed!
+
+Chaining Two Promises Sequentially:
+Question 4: Define two functions stepOne and stepTwo that each return a promise resolving with the strings "Step 1 complete" and "Step 2 complete" after 2 seconds each. Use promise chaining to print these messages in sequence.
+Expected Output:
+        Step 1 complete
+        Step 2 complete
+
+Nested .then() Calls:
+Question 5: Modify the function fetchUserDetails to return a promise resolving with "User details loaded." Chain another promise that prints "User settings loaded" inside the .then() block of the first function.
+Expected Output:
+        User details loaded
+        User settings loaded
+
+Handling Both Resolve and Reject:
+Question 6: Create a function checkStatus that returns a promise. If the status is true, resolve with "Status OK"; otherwise, reject with "Status Error." Use .then() and .catch() to handle both outcomes.
+Expected Output: For status true, log Status OK. For false, log Status Error.
+Promise with Return Value in Chain:
+
+Question 7: Create a function fetchPageData that resolves with "Page 1 loaded." Use promise chaining to call fetchPageData, then print "Loading next page" and call the function again, printing the final output.
+Expected Output:
+        Page 1 loaded
+        Loading next page
+        Page 1 loaded
+
+Simplifying Promise Chain Syntax:
+Question 8: Refactor the following promise chain to make it compact using return inside .then():
+Code :- 
+getData(1).then((res) => {
+    console.log(res);
+    return getData(2);
+}).then((res) => {
+    console.log(res);
+});
+
+Expected Output: The output remains the same but with cleaner code.
+
+Promise Chain with Multiple Asynchronous Calls:
+Question 9: Write a promise chain that calls loadComponent(), initializeComponent(), and displayComponent() sequentially, logging each step with corresponding messages.
+Expected Output:
+Component loaded
+Component initialized
+Component displayed
+
+Handling Errors in Promise Chains:
+Question 10: Modify the promise chain to handle errors that occur at any stage and log "An error occurred" if any of the promises are rejected.
+Expected Output: If any promise fails, log An error occurred.
