@@ -1,0 +1,29 @@
+Basic Async Function:
+1. Write an async function named fetchGreeting that logs "Hello from JavaScript!" after a 2-second delay. Use await inside the function to simulate the delay using setTimeout.
+
+Promise Resolution with Async:
+2. Create a function fetchData that returns a promise resolved with a random number after 1 second. Use an async function to call fetchData and print the resolved value.
+
+Handling Rejected Promises:
+3. Create a function fetchError that returns a promise rejected with an error message after 1 second. Use an async function to handle the rejection and print "Error occurred" using try...catch.
+
+Sequential API Calls:
+4. Write an async function fetchMultipleData that makes three sequential API calls using the getData function (or similar). Log "Fetching Data: [ID]" for each call and the data fetched.
+
+Parallel API Calls with Await:
+5. Modify fetchMultipleData to execute all three getData calls in parallel using Promise.all(). Print the result only after all promises are resolved.
+
+Using Async with IIFE:
+6. Create an IIFE (Immediately Invoked Function Expression) that uses async and await to fetch two pieces of data sequentially and log them to the console.
+
+Conditional Await Usage:
+7. Write an async function conditionalFetch that only calls getData if the ID passed is greater than 100. Otherwise, log "Invalid Data ID."
+
+Chained Async Functions:
+8. Implement two async functions, fetchPart1 and fetchPart2. fetchPart1 should call fetchPart2 using await and log a message before and after calling fetchPart2.
+
+Handling API Errors with Await:
+9. Create an async function that fetches data from an API that sometimes fails. Use try...catch to handle errors and print either the data or an error message.
+
+Using Async Await Inside IIFE:
+10. Create an IIFE that fetches and logs data from three different APIs using async and await. Each API call should log a message indicating the data being fetched.

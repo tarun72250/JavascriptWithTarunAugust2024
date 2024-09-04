@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await in js</title>
+</head>
+<body>
+    
+
+    <script>
+        //Async and Await :- 
+        //async and await are two keywords in js.
+        //they both are basically used for asynchronous programming.
+        
+        //Async :- 
+        //async keyword is usually used with function keyword.
+        //async fn will return some promise object.
+
+        //ex :- 
+        // async function Greeting()
+        // {
+        //     console.log("Hello From Javascript...!")
+        // }
+
+
+        //------------------------------------------------------------------------
+        //Await :- 
+        //to wait for something.
+        //await passes the execution of its surrounding async fn until the promise is settled.
+
+        //Note :- Always use await keyword inside any async fn.
+
+
+        //ex :- 
+        // function api()
+        // {
+        //     return new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //         console.log("API Integration Data Fetching...!");
+        //         resolve(200);
+        //         },2000)
+        //     })
+        // }
+
+        //problem
+        //await api();//Uncaught SyntaxError: await is only valid in async functions and the top level bodies 
+
+        //solution :-
+        // async function getApiIntegration()
+        // {
+        //     await api();
+        // }
+
+
+        //if we have some more api call
+
+        // async function getApiIntegration()
+        // {
+        //     await api();//1 st call
+        //     await api();//2 nd call 
+        //     await api();//3 rd call
+        //     await api();//4 th call
+        // }
+
+        //---------------------------------------------------------------------------------------------------
+
+        //getData() by asyn and await
+        function getData(dataId){
+           return new Promise((resolve,reject)=>{
+               setTimeout(()=>{
+               console.log("data id :",dataId);
+               resolve(200);               
+           },3000)
+           })
+      }
+
+
+    //   async function getAsyncData()
+    //   {
+    //     console.log("Fetching Data1.....!");
+    //     await getData(101);
+    //   }
+
+    //if we have more then one data 
+    // async function getAsyncData()
+    //   {
+    //     console.log("Fetching Data1.....!");
+    //     await getData(101);
+    //     console.log("Fetching Data2.....!");
+    //     await getData(102);
+    //     console.log("Fetching Data3.....!");
+    //     await getData(103);
+    //     console.log("Fetching Data4.....!");
+    //     await getData(104);
+    //     console.log("Fetching Data5.....!");
+    //     await getData(105);
+    //     console.log("Fetching Data6.....!");
+    //     await getData(106);
+    //   }
+
+      //---------------------------------------------------------------------------------------------
+      //IIFE :- Immediately Invoked Function Expression.
+      //An IIFE is a Javascript that fn which runs as soon as it is defined.
+      //Note :- it will only execute only once , or they will execute automatically.
+      //syntax :-
+      //(a)();
+
+
+      (async function()
+      {
+        console.log("Fetching Data1.....!");
+        await getData(101);
+        console.log("Fetching Data2.....!");
+        await getData(102);
+        console.log("Fetching Data3.....!");
+        await getData(103);
+        console.log("Fetching Data4.....!");
+        await getData(104);
+        console.log("Fetching Data5.....!");
+        await getData(105);
+        console.log("Fetching Data6.....!");
+        await getData(106);
+      }
+        )();
+    </script>
+</body>
+</html>

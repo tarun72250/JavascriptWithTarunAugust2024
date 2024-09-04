@@ -7,6 +7,7 @@ Question 2: Write a function loadResource that returns a promise. If the resourc
 Expected Output: For an ID less than 10, it should log "Invalid Resource ID."
 
 Promise with setTimeout:
+
 Question 3: Create a function delayedMessage that returns a promise resolving with the message "This message is delayed!" after 3 seconds. Print this message using .then().
 Expected Output: This message is delayed!
 
@@ -17,6 +18,7 @@ Expected Output:
         Step 2 complete
 
 Nested .then() Calls:
+
 Question 5: Modify the function fetchUserDetails to return a promise resolving with "User details loaded." Chain another promise that prints "User settings loaded" inside the .then() block of the first function.
 Expected Output:
         User details loaded
@@ -34,6 +36,8 @@ Expected Output:
         Page 1 loaded
 
 Simplifying Promise Chain Syntax:
+
+
 Question 8: Refactor the following promise chain to make it compact using return inside .then():
 Code :- 
 getData(1).then((res) => {
@@ -53,5 +57,7 @@ Component initialized
 Component displayed
 
 Handling Errors in Promise Chains:
+
+
 Question 10: Modify the promise chain to handle errors that occur at any stage and log "An error occurred" if any of the promises are rejected.
 Expected Output: If any promise fails, log An error occurred.

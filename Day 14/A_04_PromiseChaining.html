@@ -160,18 +160,22 @@
 
     //if we have 3 data , promise chaining
     
+    console.log("Fetching Data1....")
     getData(101)
     .then((res)=>{
         console.log(res);
+        console.log("Fetching Data2....")
         return getData(102);
     }).then((res)=>{
         console.log(res);
+        console.log("Fetching Data2....")
         return getData(103);
     }).then((res)=>{
         console.log(res);
     })
 
     //---------------------------------------------------------------------------------------------------
+
 
     </script>
 </body>
